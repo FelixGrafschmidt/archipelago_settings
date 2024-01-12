@@ -1,0 +1,3465 @@
+{
+  "game": "Final Fantasy",
+  "description": "Hurray",
+  "name": "FinalFantasy",
+  "Final Fantasy": {
+    "items": {
+      "SilverShield": {
+        "id": 342,
+        "count": 2,
+        "incentive": false
+      },
+      "Shard": {
+        "id": 277,
+        "count": 32,
+        "incentive": false
+      },
+      "Floater": {
+        "id": 267,
+        "count": 1,
+        "incentive": true
+      },
+      "Gold880": {
+        "id": 394,
+        "count": 3,
+        "incentive": false
+      },
+      "PowerRod": {
+        "id": 311,
+        "count": 1,
+        "incentive": false
+      },
+      "Gold6720": {
+        "id": 408,
+        "count": 1,
+        "incentive": false
+      },
+      "Soft": {
+        "id": 283,
+        "count": 5,
+        "incentive": false
+      },
+      "Defense": {
+        "id": 315,
+        "count": 1,
+        "incentive": false
+      },
+      "Gold9900": {
+        "id": 416,
+        "count": 4,
+        "incentive": false
+      },
+      "Gold575": {
+        "id": 389,
+        "count": 3,
+        "incentive": false
+      },
+      "Gold8135": {
+        "id": 412,
+        "count": 3,
+        "incentive": false
+      },
+      "Gold450": {
+        "id": 386,
+        "count": 2,
+        "incentive": false
+      },
+      "Cabin": {
+        "id": 279,
+        "count": 6,
+        "incentive": false
+      },
+      "House": {
+        "id": 280,
+        "count": 7,
+        "incentive": false
+      },
+      "Gold6400": {
+        "id": 407,
+        "count": 2,
+        "incentive": false
+      },
+      "IceShield": {
+        "id": 344,
+        "count": 1,
+        "incentive": false
+      },
+      "Gold1520": {
+        "id": 398,
+        "count": 3,
+        "incentive": false
+      },
+      "Tent": {
+        "id": 278,
+        "count": 2,
+        "incentive": false
+      },
+      "HealHelm": {
+        "id": 354,
+        "count": 2,
+        "incentive": false
+      },
+      "Gold10000": {
+        "id": 417,
+        "count": 3,
+        "incentive": false
+      },
+      "Adamant": {
+        "id": 263,
+        "count": 1,
+        "incentive": true
+      },
+      "SilverHelm": {
+        "id": 352,
+        "count": 4,
+        "incentive": false
+      },
+      "Gold2750": {
+        "id": 402,
+        "count": 6,
+        "incentive": false
+      },
+      "IronGauntlets": {
+        "id": 358,
+        "count": 2,
+        "incentive": false
+      },
+      "Gold9500": {
+        "id": 415,
+        "count": 3,
+        "incentive": false
+      },
+      "Pure": {
+        "id": 282,
+        "count": 5,
+        "incentive": false
+      },
+      "SilverHammer": {
+        "id": 301,
+        "count": 1,
+        "incentive": false
+      },
+      "PowerGauntlets": {
+        "id": 361,
+        "count": 1,
+        "incentive": false
+      },
+      "Gold7690": {
+        "id": 410,
+        "count": 2,
+        "incentive": false
+      },
+      "Cube": {
+        "id": 270,
+        "count": 1,
+        "incentive": true
+      },
+      "SilverGauntlets": {
+        "id": 359,
+        "count": 2,
+        "incentive": false
+      },
+      "WereSword": {
+        "id": 309,
+        "count": 1,
+        "incentive": false
+      },
+      "Ribbon": {
+        "id": 355,
+        "count": 3,
+        "incentive": true
+      },
+      "Gold1020": {
+        "id": 395,
+        "count": 1,
+        "incentive": false
+      },
+      "Heal": {
+        "id": 281,
+        "count": 10,
+        "incentive": false
+      },
+      "Gold7340": {
+        "id": 409,
+        "count": 3,
+        "incentive": false
+      },
+      "LightAxe": {
+        "id": 312,
+        "count": 2,
+        "incentive": false
+      },
+      "Gold10": {
+        "id": 364,
+        "count": 2,
+        "incentive": false
+      },
+      "IronStaff": {
+        "id": 294,
+        "count": 1,
+        "incentive": false
+      },
+      "Katana": {
+        "id": 321,
+        "count": 2,
+        "incentive": false
+      },
+      "Gold4150": {
+        "id": 404,
+        "count": 4,
+        "incentive": false
+      },
+      "DragonSword": {
+        "id": 305,
+        "count": 1,
+        "incentive": false
+      },
+      "Gold5450": {
+        "id": 406,
+        "count": 4,
+        "incentive": false
+      },
+      "Gold5000": {
+        "id": 405,
+        "count": 5,
+        "incentive": false
+      },
+      "IceArmor": {
+        "id": 331,
+        "count": 1,
+        "incentive": false
+      },
+      "Gold1455": {
+        "id": 397,
+        "count": 3,
+        "incentive": false
+      },
+      "Gold2000": {
+        "id": 401,
+        "count": 3,
+        "incentive": false
+      },
+      "Sabre": {
+        "id": 295,
+        "count": 1,
+        "incentive": false
+      },
+      "SilverKnife": {
+        "id": 299,
+        "count": 1,
+        "incentive": false
+      },
+      "CopperGauntlets": {
+        "id": 357,
+        "count": 1,
+        "incentive": false
+      },
+      "OpalGauntlets": {
+        "id": 362,
+        "count": 2,
+        "incentive": false
+      },
+      "ShortSword": {
+        "id": 289,
+        "count": 1,
+        "incentive": false
+      },
+      "Gold7900": {
+        "id": 411,
+        "count": 3,
+        "incentive": false
+      },
+      "Xcalber": {
+        "id": 322,
+        "count": 1,
+        "incentive": false
+      },
+      "CoralSword": {
+        "id": 308,
+        "count": 1,
+        "incentive": false
+      },
+      "FlameSword": {
+        "id": 303,
+        "count": 1,
+        "incentive": false
+      },
+      "Slab": {
+        "id": 264,
+        "count": 1,
+        "incentive": true
+      },
+      "OpalShield": {
+        "id": 345,
+        "count": 2,
+        "incentive": false
+      },
+      "Gold3400": {
+        "id": 403,
+        "count": 4,
+        "incentive": false
+      },
+      "AegisShield": {
+        "id": 346,
+        "count": 1,
+        "incentive": false
+      },
+      "IronShield": {
+        "id": 341,
+        "count": 1,
+        "incentive": false
+      },
+      "Rod": {
+        "id": 266,
+        "count": 1,
+        "incentive": true
+      },
+      "IronArmor": {
+        "id": 327,
+        "count": 2,
+        "incentive": false
+      },
+      "Opal": {
+        "id": 337,
+        "count": 1,
+        "incentive": false
+      },
+      "Gold1760": {
+        "id": 399,
+        "count": 3,
+        "incentive": false
+      },
+      "GiantSword": {
+        "id": 306,
+        "count": 1,
+        "incentive": false
+      },
+      "IronHelm": {
+        "id": 351,
+        "count": 1,
+        "incentive": false
+      },
+      "ProRing": {
+        "id": 363,
+        "count": 3,
+        "incentive": false
+      },
+      "Gold9000": {
+        "id": 413,
+        "count": 2,
+        "incentive": false
+      },
+      "FlameArmor": {
+        "id": 330,
+        "count": 1,
+        "incentive": false
+      },
+      "WizardRod": {
+        "id": 316,
+        "count": 1,
+        "incentive": false
+      },
+      "SilverAxe": {
+        "id": 302,
+        "count": 1,
+        "incentive": false
+      },
+      "HealRod": {
+        "id": 313,
+        "count": 1,
+        "incentive": false
+      },
+      "Gold1250": {
+        "id": 396,
+        "count": 1,
+        "incentive": false
+      },
+      "ProCape": {
+        "id": 348,
+        "count": 2,
+        "incentive": false
+      },
+      "IceSword": {
+        "id": 304,
+        "count": 2,
+        "incentive": false
+      },
+      "Lute": {
+        "id": 257,
+        "count": 1,
+        "incentive": true
+      },
+      "BlackShirt": {
+        "id": 339,
+        "count": 1,
+        "incentive": false
+      },
+      "OpalArmor": {
+        "id": 332,
+        "count": 1,
+        "incentive": false
+      },
+      "BaneSword": {
+        "id": 320,
+        "count": 1,
+        "incentive": false
+      },
+      "SunSword": {
+        "id": 307,
+        "count": 1,
+        "incentive": false
+      },
+      "Gold795": {
+        "id": 393,
+        "count": 1,
+        "incentive": false
+      },
+      "Gold620": {
+        "id": 390,
+        "count": 1,
+        "incentive": false
+      },
+      "Copper": {
+        "id": 334,
+        "count": 1,
+        "incentive": false
+      },
+      "Gold385": {
+        "id": 384,
+        "count": 1,
+        "incentive": false
+      },
+      "Gold1975": {
+        "id": 400,
+        "count": 2,
+        "incentive": false
+      },
+      "WhiteShirt": {
+        "id": 338,
+        "count": 1,
+        "incentive": false
+      },
+      "Falchon": {
+        "id": 298,
+        "count": 1,
+        "incentive": false
+      },
+      "FlameShield": {
+        "id": 343,
+        "count": 1,
+        "incentive": false
+      },
+      "OpalHelm": {
+        "id": 353,
+        "count": 1,
+        "incentive": false
+      },
+      "RuneSword": {
+        "id": 310,
+        "count": 1,
+        "incentive": false
+      },
+      "ThorHammer": {
+        "id": 319,
+        "count": 1,
+        "incentive": false
+      },
+      "SilverArmor": {
+        "id": 329,
+        "count": 1,
+        "incentive": false
+      },
+      "DragonArmor": {
+        "id": 333,
+        "count": 1,
+        "incentive": false
+      },
+      "MageRod": {
+        "id": 314,
+        "count": 1,
+        "incentive": false
+      },
+      "Gold": {
+        "id": 336,
+        "count": 1,
+        "incentive": false
+      },
+      "ZeusGauntlets": {
+        "id": 360,
+        "count": 1,
+        "incentive": false
+      },
+      "Silver": {
+        "id": 335,
+        "count": 1,
+        "incentive": false
+      },
+      "Masamune": {
+        "id": 323,
+        "count": 1,
+        "incentive": true
+      },
+      "Crown": {
+        "id": 258,
+        "count": 1,
+        "incentive": true
+      },
+      "Herb": {
+        "id": 260,
+        "count": 1,
+        "incentive": true
+      },
+      "Ship": {
+        "id": 480,
+        "count": 1,
+        "incentive": true
+      },
+      "Tail": {
+        "id": 269,
+        "count": 1,
+        "incentive": true
+      },
+      "Canoe": {
+        "id": 498,
+        "count": 1,
+        "incentive": true
+      },
+      "Bottle": {
+        "id": 271,
+        "count": 1,
+        "incentive": true
+      },
+      "Ruby": {
+        "id": 265,
+        "count": 1,
+        "incentive": true
+      },
+      "Key": {
+        "id": 261,
+        "count": 1,
+        "incentive": true
+      },
+      "Oxyale": {
+        "id": 272,
+        "count": 1,
+        "incentive": true
+      },
+      "Canal": {
+        "id": 492,
+        "count": 1,
+        "incentive": true
+      },
+      "Tnt": {
+        "id": 262,
+        "count": 1,
+        "incentive": true
+      },
+      "Chime": {
+        "id": 268,
+        "count": 1,
+        "incentive": true
+      },
+      "Crystal": {
+        "id": 259,
+        "count": 1,
+        "incentive": true
+      }
+    },
+    "locations": {
+      "Coneria1": 257,
+      "Coneria2": 258,
+      "ConeriaMajor": 259,
+      "Coneria4": 260,
+      "Coneria5": 261,
+      "Coneria6": 262,
+      "NorthwestCastle1": 273,
+      "NorthwestCastle3": 275,
+      "ToFTopLeft1": 263,
+      "ToFBottomLeft": 265,
+      "ToFTopLeft2": 264,
+      "ToFTopRight1": 267,
+      "ToFTopRight2": 268,
+      "ToFBottomRight": 266,
+      "MatoyasCave1": 299,
+      "MatoyasCave3": 301,
+      "MatoyasCave2": 300,
+      "IceCave15": 377,
+      "IceCave16": 378,
+      "IceCave9": 371,
+      "IceCave11": 373,
+      "IceCave10": 372,
+      "IceCave12": 374,
+      "IceCave13": 375,
+      "IceCave14": 376,
+      "IceCave1": 363,
+      "IceCave2": 364,
+      "IceCave3": 365,
+      "IceCave4": 366,
+      "IceCave5": 367,
+      "IceCaveMajor": 370,
+      "IceCave6": 368,
+      "Elfland1": 269,
+      "Elfland3": 271,
+      "Elfland4": 272,
+      "Ordeals5": 383,
+      "Ordeals6": 384,
+      "Ordeals7": 385,
+      "Ordeals1": 379,
+      "Ordeals2": 380,
+      "Ordeals3": 381,
+      "Ordeals4": 382,
+      "OrdealsMajor": 387,
+      "Ordeals8": 386,
+      "DwarfCave3": 291,
+      "DwarfCave4": 292,
+      "DwarfCave6": 294,
+      "DwarfCave7": 295,
+      "DwarfCave5": 293,
+      "DwarfCave8": 296,
+      "DwarfCave9": 297,
+      "DwarfCave10": 298,
+      "DwarfCave1": 289,
+      "DwarfCave2": 290,
+      "Volcano32": 361,
+      "Volcano31": 360,
+      "Volcano28": 357,
+      "Volcano29": 358,
+      "Volcano21": 350,
+      "Volcano20": 349,
+      "Volcano24": 353,
+      "Volcano19": 348,
+      "Volcano25": 354,
+      "VolcanoMajor": 362,
+      "Volcano26": 355,
+      "Volcano27": 356,
+      "Volcano22": 351,
+      "Volcano23": 352,
+      "Volcano1": 330,
+      "Volcano9": 338,
+      "Volcano2": 331,
+      "Volcano10": 339,
+      "Volcano3": 332,
+      "Volcano8": 337,
+      "Volcano4": 333,
+      "Volcano13": 342,
+      "Volcano11": 340,
+      "Volcano7": 336,
+      "Volcano6": 335,
+      "Volcano5": 334,
+      "Volcano14": 343,
+      "Volcano12": 341,
+      "Volcano15": 344,
+      "Volcano18": 347,
+      "Volcano17": 346,
+      "Volcano16": 345,
+      "MarshCave6": 281,
+      "MarshCave5": 280,
+      "MarshCave7": 282,
+      "MarshCave8": 283,
+      "MarshCave10": 285,
+      "MarshCave2": 277,
+      "MarshCave11": 286,
+      "MarshCave3": 278,
+      "MarshCaveMajor": 284,
+      "MarshCave12": 287,
+      "MarshCave4": 279,
+      "MarshCave1": 276,
+      "MarshCave13": 288,
+      "TitansTunnel1": 326,
+      "TitansTunnel2": 327,
+      "TitansTunnel3": 328,
+      "TitansTunnel4": 329,
+      "EarthCave1": 302,
+      "EarthCave2": 303,
+      "EarthCave3": 304,
+      "EarthCave4": 305,
+      "EarthCave9": 310,
+      "EarthCave10": 311,
+      "EarthCave11": 312,
+      "EarthCave6": 307,
+      "EarthCave7": 308,
+      "EarthCave12": 313,
+      "EarthCaveMajor": 317,
+      "EarthCave19": 320,
+      "EarthCave17": 318,
+      "EarthCave18": 319,
+      "EarthCave20": 321,
+      "EarthCave24": 325,
+      "EarthCave21": 322,
+      "EarthCave22": 323,
+      "EarthCave23": 324,
+      "EarthCave13": 314,
+      "EarthCave15": 316,
+      "EarthCave14": 315,
+      "EarthCave8": 309,
+      "Cardia11": 398,
+      "Cardia9": 396,
+      "Cardia10": 397,
+      "Cardia6": 393,
+      "Cardia8": 395,
+      "Cardia7": 394,
+      "Cardia13": 400,
+      "Cardia12": 399,
+      "Cardia4": 391,
+      "Cardia5": 392,
+      "Cardia3": 390,
+      "Cardia1": 388,
+      "Cardia2": 389,
+      "MirageTower5": 456,
+      "MirageTower16": 467,
+      "MirageTower17": 468,
+      "MirageTower15": 466,
+      "MirageTower14": 465,
+      "SkyPalace1": 470,
+      "SkyPalace2": 471,
+      "SkyPalace3": 472,
+      "SkyPalace4": 473,
+      "SkyPalace18": 487,
+      "SkyPalace19": 488,
+      "SkyPalace16": 485,
+      "SkyPalaceMajor": 489,
+      "SkyPalace17": 486,
+      "SkyPalace22": 491,
+      "SkyPalace21": 490,
+      "SkyPalace23": 492,
+      "SkyPalace24": 493,
+      "SkyPalace31": 500,
+      "SkyPalace32": 501,
+      "SkyPalace33": 502,
+      "SkyPalace34": 503,
+      "SkyPalace29": 498,
+      "SkyPalace26": 495,
+      "SkyPalace25": 494,
+      "SkyPalace28": 497,
+      "SkyPalace27": 496,
+      "SkyPalace30": 499,
+      "SkyPalace14": 483,
+      "SkyPalace11": 480,
+      "SkyPalace13": 482,
+      "SkyPalace15": 484,
+      "SkyPalace10": 479,
+      "SkyPalace5": 474,
+      "SkyPalace6": 475,
+      "SkyPalace7": 476,
+      "SkyPalace8": 477,
+      "SkyPalace9": 478,
+      "MirageTower9": 460,
+      "MirageTower13": 464,
+      "MirageTower10": 461,
+      "MirageTower12": 463,
+      "MirageTower11": 462,
+      "MirageTower1": 452,
+      "MirageTower2": 453,
+      "MirageTower4": 455,
+      "MirageTower3": 454,
+      "MirageTower8": 459,
+      "MirageTower7": 458,
+      "MirageTower6": 457,
+      "Waterfall1": 437,
+      "Waterfall2": 438,
+      "Waterfall3": 439,
+      "Waterfall4": 440,
+      "Waterfall5": 441,
+      "Waterfall6": 442,
+      "SeaShrine7": 411,
+      "SeaShrine8": 412,
+      "SeaShrine9": 413,
+      "SeaShrine10": 414,
+      "SeaShrine1": 405,
+      "SeaShrine2": 406,
+      "SeaShrine3": 407,
+      "SeaShrine4": 408,
+      "SeaShrine5": 409,
+      "SeaShrine6": 410,
+      "SeaShrine13": 417,
+      "SeaShrine14": 418,
+      "SeaShrine11": 415,
+      "SeaShrine16": 420,
+      "SeaShrineLocked": 421,
+      "SeaShrine18": 422,
+      "SeaShrine19": 423,
+      "SeaShrine20": 424,
+      "SeaShrine23": 427,
+      "SeaShrine21": 425,
+      "SeaShrine22": 426,
+      "SeaShrine24": 428,
+      "SeaShrine26": 430,
+      "SeaShrine28": 432,
+      "SeaShrine25": 429,
+      "SeaShrine30": 434,
+      "SeaShrine27": 431,
+      "SeaShrine29": 433,
+      "SeaShrineMajor": 436,
+      "SeaShrine12": 416,
+      "GaiaShop3": 767,
+      "King": 513,
+      "Princess2": 530,
+      "Astos": 519,
+      "Bikke": 516,
+      "Matoya": 522,
+      "CanoeSage": 533,
+      "ElfPrince": 518,
+      "Nerrick": 520,
+      "Smith": 521,
+      "Sarda": 525,
+      "Fairy": 531,
+      "Lefein": 527,
+      "CubeBot": 529
+    },
+    "locations2": {
+      "Coneria1": {
+        "id": 257,
+        "incentive": false
+      },
+      "Coneria2": {
+        "id": 258,
+        "incentive": false
+      },
+      "ConeriaMajor": {
+        "id": 259,
+        "incentive": true
+      },
+      "Coneria4": {
+        "id": 260,
+        "incentive": false
+      },
+      "Coneria5": {
+        "id": 261,
+        "incentive": false
+      },
+      "Coneria6": {
+        "id": 262,
+        "incentive": false
+      },
+      "NorthwestCastle1": {
+        "id": 273,
+        "incentive": false
+      },
+      "NorthwestCastle3": {
+        "id": 275,
+        "incentive": false
+      },
+      "ToFTopLeft1": {
+        "id": 263,
+        "incentive": false
+      },
+      "ToFBottomLeft": {
+        "id": 265,
+        "incentive": false
+      },
+      "ToFTopLeft2": {
+        "id": 264,
+        "incentive": false
+      },
+      "ToFTopRight1": {
+        "id": 267,
+        "incentive": false
+      },
+      "ToFTopRight2": {
+        "id": 268,
+        "incentive": false
+      },
+      "ToFBottomRight": {
+        "id": 266,
+        "incentive": false
+      },
+      "MatoyasCave1": {
+        "id": 299,
+        "incentive": false
+      },
+      "MatoyasCave3": {
+        "id": 301,
+        "incentive": false
+      },
+      "MatoyasCave2": {
+        "id": 300,
+        "incentive": false
+      },
+      "IceCave15": {
+        "id": 377,
+        "incentive": false
+      },
+      "IceCave16": {
+        "id": 378,
+        "incentive": false
+      },
+      "IceCave9": {
+        "id": 371,
+        "incentive": false
+      },
+      "IceCave11": {
+        "id": 373,
+        "incentive": false
+      },
+      "IceCave10": {
+        "id": 372,
+        "incentive": false
+      },
+      "IceCave12": {
+        "id": 374,
+        "incentive": false
+      },
+      "IceCave13": {
+        "id": 375,
+        "incentive": false
+      },
+      "IceCave14": {
+        "id": 376,
+        "incentive": false
+      },
+      "IceCave1": {
+        "id": 363,
+        "incentive": false
+      },
+      "IceCave2": {
+        "id": 364,
+        "incentive": false
+      },
+      "IceCave3": {
+        "id": 365,
+        "incentive": false
+      },
+      "IceCave4": {
+        "id": 366,
+        "incentive": false
+      },
+      "IceCave5": {
+        "id": 367,
+        "incentive": false
+      },
+      "IceCaveMajor": {
+        "id": 370,
+        "incentive": true
+      },
+      "IceCave6": {
+        "id": 368,
+        "incentive": false
+      },
+      "Elfland1": {
+        "id": 269,
+        "incentive": false
+      },
+      "Elfland3": {
+        "id": 271,
+        "incentive": false
+      },
+      "Elfland4": {
+        "id": 272,
+        "incentive": false
+      },
+      "Ordeals5": {
+        "id": 383,
+        "incentive": false
+      },
+      "Ordeals6": {
+        "id": 384,
+        "incentive": false
+      },
+      "Ordeals7": {
+        "id": 385,
+        "incentive": false
+      },
+      "Ordeals1": {
+        "id": 379,
+        "incentive": false
+      },
+      "Ordeals2": {
+        "id": 380,
+        "incentive": false
+      },
+      "Ordeals3": {
+        "id": 381,
+        "incentive": false
+      },
+      "Ordeals4": {
+        "id": 382,
+        "incentive": false
+      },
+      "OrdealsMajor": {
+        "id": 387,
+        "incentive": true
+      },
+      "Ordeals8": {
+        "id": 386,
+        "incentive": false
+      },
+      "DwarfCave3": {
+        "id": 291,
+        "incentive": false
+      },
+      "DwarfCave4": {
+        "id": 292,
+        "incentive": false
+      },
+      "DwarfCave6": {
+        "id": 294,
+        "incentive": false
+      },
+      "DwarfCave7": {
+        "id": 295,
+        "incentive": false
+      },
+      "DwarfCave5": {
+        "id": 293,
+        "incentive": false
+      },
+      "DwarfCave8": {
+        "id": 296,
+        "incentive": false
+      },
+      "DwarfCave9": {
+        "id": 297,
+        "incentive": false
+      },
+      "DwarfCave10": {
+        "id": 298,
+        "incentive": false
+      },
+      "DwarfCave1": {
+        "id": 289,
+        "incentive": false
+      },
+      "DwarfCave2": {
+        "id": 290,
+        "incentive": false
+      },
+      "Volcano32": {
+        "id": 361,
+        "incentive": false
+      },
+      "Volcano31": {
+        "id": 360,
+        "incentive": false
+      },
+      "Volcano28": {
+        "id": 357,
+        "incentive": false
+      },
+      "Volcano29": {
+        "id": 358,
+        "incentive": false
+      },
+      "Volcano21": {
+        "id": 350,
+        "incentive": false
+      },
+      "Volcano20": {
+        "id": 349,
+        "incentive": false
+      },
+      "Volcano24": {
+        "id": 353,
+        "incentive": false
+      },
+      "Volcano19": {
+        "id": 348,
+        "incentive": false
+      },
+      "Volcano25": {
+        "id": 354,
+        "incentive": false
+      },
+      "VolcanoMajor": {
+        "id": 362,
+        "incentive": false
+      },
+      "Volcano26": {
+        "id": 355,
+        "incentive": false
+      },
+      "Volcano27": {
+        "id": 356,
+        "incentive": false
+      },
+      "Volcano22": {
+        "id": 351,
+        "incentive": false
+      },
+      "Volcano23": {
+        "id": 352,
+        "incentive": false
+      },
+      "Volcano1": {
+        "id": 330,
+        "incentive": false
+      },
+      "Volcano9": {
+        "id": 338,
+        "incentive": false
+      },
+      "Volcano2": {
+        "id": 331,
+        "incentive": false
+      },
+      "Volcano10": {
+        "id": 339,
+        "incentive": false
+      },
+      "Volcano3": {
+        "id": 332,
+        "incentive": false
+      },
+      "Volcano8": {
+        "id": 337,
+        "incentive": false
+      },
+      "Volcano4": {
+        "id": 333,
+        "incentive": false
+      },
+      "Volcano13": {
+        "id": 342,
+        "incentive": false
+      },
+      "Volcano11": {
+        "id": 340,
+        "incentive": false
+      },
+      "Volcano7": {
+        "id": 336,
+        "incentive": false
+      },
+      "Volcano6": {
+        "id": 335,
+        "incentive": false
+      },
+      "Volcano5": {
+        "id": 334,
+        "incentive": false
+      },
+      "Volcano14": {
+        "id": 343,
+        "incentive": false
+      },
+      "Volcano12": {
+        "id": 341,
+        "incentive": false
+      },
+      "Volcano15": {
+        "id": 344,
+        "incentive": false
+      },
+      "Volcano18": {
+        "id": 347,
+        "incentive": false
+      },
+      "Volcano17": {
+        "id": 346,
+        "incentive": false
+      },
+      "Volcano16": {
+        "id": 345,
+        "incentive": false
+      },
+      "MarshCave6": {
+        "id": 281,
+        "incentive": false
+      },
+      "MarshCave5": {
+        "id": 280,
+        "incentive": false
+      },
+      "MarshCave7": {
+        "id": 282,
+        "incentive": false
+      },
+      "MarshCave8": {
+        "id": 283,
+        "incentive": false
+      },
+      "MarshCave10": {
+        "id": 285,
+        "incentive": false
+      },
+      "MarshCave2": {
+        "id": 277,
+        "incentive": false
+      },
+      "MarshCave11": {
+        "id": 286,
+        "incentive": false
+      },
+      "MarshCave3": {
+        "id": 278,
+        "incentive": false
+      },
+      "MarshCaveMajor": {
+        "id": 284,
+        "incentive": true
+      },
+      "MarshCave12": {
+        "id": 287,
+        "incentive": false
+      },
+      "MarshCave4": {
+        "id": 279,
+        "incentive": false
+      },
+      "MarshCave1": {
+        "id": 276,
+        "incentive": false
+      },
+      "MarshCave13": {
+        "id": 288,
+        "incentive": false
+      },
+      "TitansTunnel1": {
+        "id": 326,
+        "incentive": false
+      },
+      "TitansTunnel2": {
+        "id": 327,
+        "incentive": false
+      },
+      "TitansTunnel3": {
+        "id": 328,
+        "incentive": false
+      },
+      "TitansTunnel4": {
+        "id": 329,
+        "incentive": false
+      },
+      "EarthCave1": {
+        "id": 302,
+        "incentive": false
+      },
+      "EarthCave2": {
+        "id": 303,
+        "incentive": false
+      },
+      "EarthCave3": {
+        "id": 304,
+        "incentive": false
+      },
+      "EarthCave4": {
+        "id": 305,
+        "incentive": false
+      },
+      "EarthCave9": {
+        "id": 310,
+        "incentive": false
+      },
+      "EarthCave10": {
+        "id": 311,
+        "incentive": false
+      },
+      "EarthCave11": {
+        "id": 312,
+        "incentive": false
+      },
+      "EarthCave6": {
+        "id": 307,
+        "incentive": false
+      },
+      "EarthCave7": {
+        "id": 308,
+        "incentive": false
+      },
+      "EarthCave12": {
+        "id": 313,
+        "incentive": false
+      },
+      "EarthCaveMajor": {
+        "id": 317,
+        "incentive": true
+      },
+      "EarthCave19": {
+        "id": 320,
+        "incentive": false
+      },
+      "EarthCave17": {
+        "id": 318,
+        "incentive": false
+      },
+      "EarthCave18": {
+        "id": 319,
+        "incentive": false
+      },
+      "EarthCave20": {
+        "id": 321,
+        "incentive": false
+      },
+      "EarthCave24": {
+        "id": 325,
+        "incentive": false
+      },
+      "EarthCave21": {
+        "id": 322,
+        "incentive": false
+      },
+      "EarthCave22": {
+        "id": 323,
+        "incentive": false
+      },
+      "EarthCave23": {
+        "id": 324,
+        "incentive": false
+      },
+      "EarthCave13": {
+        "id": 314,
+        "incentive": false
+      },
+      "EarthCave15": {
+        "id": 316,
+        "incentive": false
+      },
+      "EarthCave14": {
+        "id": 315,
+        "incentive": false
+      },
+      "EarthCave8": {
+        "id": 309,
+        "incentive": false
+      },
+      "Cardia11": {
+        "id": 398,
+        "incentive": false
+      },
+      "Cardia9": {
+        "id": 396,
+        "incentive": false
+      },
+      "Cardia10": {
+        "id": 397,
+        "incentive": false
+      },
+      "Cardia6": {
+        "id": 393,
+        "incentive": false
+      },
+      "Cardia8": {
+        "id": 395,
+        "incentive": false
+      },
+      "Cardia7": {
+        "id": 394,
+        "incentive": false
+      },
+      "Cardia13": {
+        "id": 400,
+        "incentive": false
+      },
+      "Cardia12": {
+        "id": 399,
+        "incentive": false
+      },
+      "Cardia4": {
+        "id": 391,
+        "incentive": false
+      },
+      "Cardia5": {
+        "id": 392,
+        "incentive": false
+      },
+      "Cardia3": {
+        "id": 390,
+        "incentive": false
+      },
+      "Cardia1": {
+        "id": 388,
+        "incentive": false
+      },
+      "Cardia2": {
+        "id": 389,
+        "incentive": false
+      },
+      "MirageTower5": {
+        "id": 456,
+        "incentive": false
+      },
+      "MirageTower16": {
+        "id": 467,
+        "incentive": false
+      },
+      "MirageTower17": {
+        "id": 468,
+        "incentive": false
+      },
+      "MirageTower15": {
+        "id": 466,
+        "incentive": false
+      },
+      "MirageTower14": {
+        "id": 465,
+        "incentive": false
+      },
+      "SkyPalace1": {
+        "id": 470,
+        "incentive": false
+      },
+      "SkyPalace2": {
+        "id": 471,
+        "incentive": false
+      },
+      "SkyPalace3": {
+        "id": 472,
+        "incentive": false
+      },
+      "SkyPalace4": {
+        "id": 473,
+        "incentive": false
+      },
+      "SkyPalace18": {
+        "id": 487,
+        "incentive": false
+      },
+      "SkyPalace19": {
+        "id": 488,
+        "incentive": false
+      },
+      "SkyPalace16": {
+        "id": 485,
+        "incentive": false
+      },
+      "SkyPalaceMajor": {
+        "id": 489,
+        "incentive": true
+      },
+      "SkyPalace17": {
+        "id": 486,
+        "incentive": false
+      },
+      "SkyPalace22": {
+        "id": 491,
+        "incentive": false
+      },
+      "SkyPalace21": {
+        "id": 490,
+        "incentive": false
+      },
+      "SkyPalace23": {
+        "id": 492,
+        "incentive": false
+      },
+      "SkyPalace24": {
+        "id": 493,
+        "incentive": false
+      },
+      "SkyPalace31": {
+        "id": 500,
+        "incentive": false
+      },
+      "SkyPalace32": {
+        "id": 501,
+        "incentive": false
+      },
+      "SkyPalace33": {
+        "id": 502,
+        "incentive": false
+      },
+      "SkyPalace34": {
+        "id": 503,
+        "incentive": false
+      },
+      "SkyPalace29": {
+        "id": 498,
+        "incentive": false
+      },
+      "SkyPalace26": {
+        "id": 495,
+        "incentive": false
+      },
+      "SkyPalace25": {
+        "id": 494,
+        "incentive": false
+      },
+      "SkyPalace28": {
+        "id": 497,
+        "incentive": false
+      },
+      "SkyPalace27": {
+        "id": 496,
+        "incentive": false
+      },
+      "SkyPalace30": {
+        "id": 499,
+        "incentive": false
+      },
+      "SkyPalace14": {
+        "id": 483,
+        "incentive": false
+      },
+      "SkyPalace11": {
+        "id": 480,
+        "incentive": false
+      },
+      "SkyPalace13": {
+        "id": 482,
+        "incentive": false
+      },
+      "SkyPalace15": {
+        "id": 484,
+        "incentive": false
+      },
+      "SkyPalace10": {
+        "id": 479,
+        "incentive": false
+      },
+      "SkyPalace5": {
+        "id": 474,
+        "incentive": false
+      },
+      "SkyPalace6": {
+        "id": 475,
+        "incentive": false
+      },
+      "SkyPalace7": {
+        "id": 476,
+        "incentive": false
+      },
+      "SkyPalace8": {
+        "id": 477,
+        "incentive": false
+      },
+      "SkyPalace9": {
+        "id": 478,
+        "incentive": false
+      },
+      "MirageTower9": {
+        "id": 460,
+        "incentive": false
+      },
+      "MirageTower13": {
+        "id": 464,
+        "incentive": false
+      },
+      "MirageTower10": {
+        "id": 461,
+        "incentive": false
+      },
+      "MirageTower12": {
+        "id": 463,
+        "incentive": false
+      },
+      "MirageTower11": {
+        "id": 462,
+        "incentive": false
+      },
+      "MirageTower1": {
+        "id": 452,
+        "incentive": false
+      },
+      "MirageTower2": {
+        "id": 453,
+        "incentive": false
+      },
+      "MirageTower4": {
+        "id": 455,
+        "incentive": false
+      },
+      "MirageTower3": {
+        "id": 454,
+        "incentive": false
+      },
+      "MirageTower8": {
+        "id": 459,
+        "incentive": false
+      },
+      "MirageTower7": {
+        "id": 458,
+        "incentive": false
+      },
+      "MirageTower6": {
+        "id": 457,
+        "incentive": false
+      },
+      "Waterfall1": {
+        "id": 437,
+        "incentive": false
+      },
+      "Waterfall2": {
+        "id": 438,
+        "incentive": false
+      },
+      "Waterfall3": {
+        "id": 439,
+        "incentive": false
+      },
+      "Waterfall4": {
+        "id": 440,
+        "incentive": false
+      },
+      "Waterfall5": {
+        "id": 441,
+        "incentive": false
+      },
+      "Waterfall6": {
+        "id": 442,
+        "incentive": false
+      },
+      "SeaShrine7": {
+        "id": 411,
+        "incentive": false
+      },
+      "SeaShrine8": {
+        "id": 412,
+        "incentive": false
+      },
+      "SeaShrine9": {
+        "id": 413,
+        "incentive": false
+      },
+      "SeaShrine10": {
+        "id": 414,
+        "incentive": false
+      },
+      "SeaShrine1": {
+        "id": 405,
+        "incentive": false
+      },
+      "SeaShrine2": {
+        "id": 406,
+        "incentive": false
+      },
+      "SeaShrine3": {
+        "id": 407,
+        "incentive": false
+      },
+      "SeaShrine4": {
+        "id": 408,
+        "incentive": false
+      },
+      "SeaShrine5": {
+        "id": 409,
+        "incentive": false
+      },
+      "SeaShrine6": {
+        "id": 410,
+        "incentive": false
+      },
+      "SeaShrine13": {
+        "id": 417,
+        "incentive": false
+      },
+      "SeaShrine14": {
+        "id": 418,
+        "incentive": false
+      },
+      "SeaShrine11": {
+        "id": 415,
+        "incentive": false
+      },
+      "SeaShrine16": {
+        "id": 420,
+        "incentive": false
+      },
+      "SeaShrineLocked": {
+        "id": 421,
+        "incentive": false
+      },
+      "SeaShrine18": {
+        "id": 422,
+        "incentive": false
+      },
+      "SeaShrine19": {
+        "id": 423,
+        "incentive": false
+      },
+      "SeaShrine20": {
+        "id": 424,
+        "incentive": false
+      },
+      "SeaShrine23": {
+        "id": 427,
+        "incentive": false
+      },
+      "SeaShrine21": {
+        "id": 425,
+        "incentive": false
+      },
+      "SeaShrine22": {
+        "id": 426,
+        "incentive": false
+      },
+      "SeaShrine24": {
+        "id": 428,
+        "incentive": false
+      },
+      "SeaShrine26": {
+        "id": 430,
+        "incentive": false
+      },
+      "SeaShrine28": {
+        "id": 432,
+        "incentive": false
+      },
+      "SeaShrine25": {
+        "id": 429,
+        "incentive": false
+      },
+      "SeaShrine30": {
+        "id": 434,
+        "incentive": false
+      },
+      "SeaShrine27": {
+        "id": 431,
+        "incentive": false
+      },
+      "SeaShrine29": {
+        "id": 433,
+        "incentive": false
+      },
+      "SeaShrineMajor": {
+        "id": 436,
+        "incentive": true
+      },
+      "SeaShrine12": {
+        "id": 416,
+        "incentive": false
+      },
+      "GaiaShop3": {
+        "id": 767,
+        "incentive": true
+      },
+      "King": {
+        "id": 513,
+        "incentive": true
+      },
+      "Princess2": {
+        "id": 530,
+        "incentive": true
+      },
+      "Astos": {
+        "id": 519,
+        "incentive": true
+      },
+      "Bikke": {
+        "id": 516,
+        "incentive": true
+      },
+      "Matoya": {
+        "id": 522,
+        "incentive": true
+      },
+      "CanoeSage": {
+        "id": 533,
+        "incentive": true
+      },
+      "ElfPrince": {
+        "id": 518,
+        "incentive": true
+      },
+      "Nerrick": {
+        "id": 520,
+        "incentive": true
+      },
+      "Smith": {
+        "id": 521,
+        "incentive": true
+      },
+      "Sarda": {
+        "id": 525,
+        "incentive": true
+      },
+      "Fairy": {
+        "id": 531,
+        "incentive": true
+      },
+      "Lefein": {
+        "id": 527,
+        "incentive": true
+      },
+      "CubeBot": {
+        "id": 529,
+        "incentive": true
+      }
+    },
+    "rules": {
+      "Coneria1": [
+        [
+          "Key"
+        ]
+      ],
+      "Coneria2": [
+        [
+          "Key"
+        ]
+      ],
+      "ConeriaMajor": [
+        [
+          "Key"
+        ]
+      ],
+      "Coneria4": [
+        [
+          "Key"
+        ]
+      ],
+      "Coneria5": [
+        [
+          "Key"
+        ]
+      ],
+      "Coneria6": [
+        [
+          "Key"
+        ]
+      ],
+      "NorthwestCastle1": [
+        [
+          "Key",
+          "Ship"
+        ],
+        [
+          "Key",
+          "Canoe"
+        ]
+      ],
+      "NorthwestCastle3": [
+        [
+          "Key",
+          "Ship"
+        ],
+        [
+          "Key",
+          "Canoe"
+        ]
+      ],
+      "ToFTopLeft1": [
+        []
+      ],
+      "ToFBottomLeft": [
+        []
+      ],
+      "ToFTopLeft2": [
+        []
+      ],
+      "ToFTopRight1": [
+        [
+          "Key"
+        ]
+      ],
+      "ToFTopRight2": [
+        [
+          "Key"
+        ]
+      ],
+      "ToFBottomRight": [
+        [
+          "Key"
+        ]
+      ],
+      "MatoyasCave1": [
+        []
+      ],
+      "MatoyasCave3": [
+        []
+      ],
+      "MatoyasCave2": [
+        []
+      ],
+      "IceCave15": [
+        [
+          "Canoe"
+        ]
+      ],
+      "IceCave16": [
+        [
+          "Canoe"
+        ]
+      ],
+      "IceCave9": [
+        [
+          "Canoe"
+        ]
+      ],
+      "IceCave11": [
+        [
+          "Canoe"
+        ]
+      ],
+      "IceCave10": [
+        [
+          "Canoe"
+        ]
+      ],
+      "IceCave12": [
+        [
+          "Canoe"
+        ]
+      ],
+      "IceCave13": [
+        [
+          "Canoe"
+        ]
+      ],
+      "IceCave14": [
+        [
+          "Canoe"
+        ]
+      ],
+      "IceCave1": [
+        [
+          "Canoe"
+        ]
+      ],
+      "IceCave2": [
+        [
+          "Canoe"
+        ]
+      ],
+      "IceCave3": [
+        [
+          "Canoe"
+        ]
+      ],
+      "IceCave4": [
+        [
+          "Canoe"
+        ]
+      ],
+      "IceCave5": [
+        [
+          "Canoe"
+        ]
+      ],
+      "IceCaveMajor": [
+        [
+          "Canoe"
+        ]
+      ],
+      "IceCave6": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Elfland1": [
+        [
+          "Key",
+          "Ship"
+        ],
+        [
+          "Key",
+          "Canoe"
+        ]
+      ],
+      "Elfland3": [
+        [
+          "Key",
+          "Ship"
+        ],
+        [
+          "Key",
+          "Canoe"
+        ]
+      ],
+      "Elfland4": [
+        [
+          "Key",
+          "Ship"
+        ],
+        [
+          "Key",
+          "Canoe"
+        ]
+      ],
+      "Ordeals5": [
+        [
+          "Canoe",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Ordeals6": [
+        [
+          "Canoe",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Ordeals7": [
+        [
+          "Canoe",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Ordeals1": [
+        [
+          "Canoe",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Ordeals2": [
+        [
+          "Canoe",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Ordeals3": [
+        [
+          "Canoe",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Ordeals4": [
+        [
+          "Canoe",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "OrdealsMajor": [
+        [
+          "Canoe",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Ordeals8": [
+        [
+          "Canoe",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "DwarfCave3": [
+        [
+          "Key"
+        ]
+      ],
+      "DwarfCave4": [
+        [
+          "Key"
+        ]
+      ],
+      "DwarfCave6": [
+        [
+          "Key"
+        ]
+      ],
+      "DwarfCave7": [
+        [
+          "Key"
+        ]
+      ],
+      "DwarfCave5": [
+        [
+          "Key"
+        ]
+      ],
+      "DwarfCave8": [
+        [
+          "Key"
+        ]
+      ],
+      "DwarfCave9": [
+        [
+          "Key"
+        ]
+      ],
+      "DwarfCave10": [
+        [
+          "Key"
+        ]
+      ],
+      "DwarfCave1": [
+        []
+      ],
+      "DwarfCave2": [
+        []
+      ],
+      "Volcano32": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano31": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano28": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano29": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano21": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano20": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano24": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano19": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano25": [
+        [
+          "Canoe"
+        ]
+      ],
+      "VolcanoMajor": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano26": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano27": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano22": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano23": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano1": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano9": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano2": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano10": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano3": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano8": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano4": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano13": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano11": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano7": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano6": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano5": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano14": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano12": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano15": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano18": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano17": [
+        [
+          "Canoe"
+        ]
+      ],
+      "Volcano16": [
+        [
+          "Canoe"
+        ]
+      ],
+      "MarshCave6": [
+        [
+          "Ship"
+        ],
+        [
+          "Canoe"
+        ]
+      ],
+      "MarshCave5": [
+        [
+          "Ship"
+        ],
+        [
+          "Canoe"
+        ]
+      ],
+      "MarshCave7": [
+        [
+          "Ship"
+        ],
+        [
+          "Canoe"
+        ]
+      ],
+      "MarshCave8": [
+        [
+          "Ship"
+        ],
+        [
+          "Canoe"
+        ]
+      ],
+      "MarshCave10": [
+        [
+          "Ship"
+        ],
+        [
+          "Canoe"
+        ]
+      ],
+      "MarshCave2": [
+        [
+          "Ship"
+        ],
+        [
+          "Canoe"
+        ]
+      ],
+      "MarshCave11": [
+        [
+          "Key",
+          "Ship"
+        ],
+        [
+          "Key",
+          "Canoe"
+        ]
+      ],
+      "MarshCave3": [
+        [
+          "Ship"
+        ],
+        [
+          "Canoe"
+        ]
+      ],
+      "MarshCaveMajor": [
+        [
+          "Ship"
+        ],
+        [
+          "Canoe"
+        ]
+      ],
+      "MarshCave12": [
+        [
+          "Key",
+          "Ship"
+        ],
+        [
+          "Key",
+          "Canoe"
+        ]
+      ],
+      "MarshCave4": [
+        [
+          "Ship"
+        ],
+        [
+          "Canoe"
+        ]
+      ],
+      "MarshCave1": [
+        [
+          "Ship"
+        ],
+        [
+          "Canoe"
+        ]
+      ],
+      "MarshCave13": [
+        [
+          "Key",
+          "Ship"
+        ],
+        [
+          "Key",
+          "Canoe"
+        ]
+      ],
+      "TitansTunnel1": [
+        [
+          "Ruby",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Ruby",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "TitansTunnel2": [
+        [
+          "Ruby",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Ruby",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "TitansTunnel3": [
+        [
+          "Ruby",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Ruby",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "TitansTunnel4": [
+        [
+          "Ruby",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Ruby",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave1": [
+        [
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave2": [
+        [
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave3": [
+        [
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave4": [
+        [
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave9": [
+        [
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave10": [
+        [
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave11": [
+        [
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave6": [
+        [
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave7": [
+        [
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave12": [
+        [
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCaveMajor": [
+        [
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave19": [
+        [
+          "Rod",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Rod",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave17": [
+        [
+          "Rod",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Rod",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave18": [
+        [
+          "Rod",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Rod",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave20": [
+        [
+          "Rod",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Rod",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave24": [
+        [
+          "Rod",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Rod",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave21": [
+        [
+          "Rod",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Rod",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave22": [
+        [
+          "Rod",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Rod",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave23": [
+        [
+          "Rod",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Rod",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave13": [
+        [
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave15": [
+        [
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave14": [
+        [
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "EarthCave8": [
+        [
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Cardia11": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Cardia9": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Cardia10": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Cardia6": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Cardia8": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Cardia7": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Cardia13": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Cardia12": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Cardia4": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Cardia5": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Cardia3": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Cardia1": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Cardia2": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "MirageTower5": [
+        [
+          "Chime",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "MirageTower16": [
+        [
+          "Chime",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "MirageTower17": [
+        [
+          "Chime",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "MirageTower15": [
+        [
+          "Chime",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "MirageTower14": [
+        [
+          "Chime",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace1": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace2": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace3": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace4": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace18": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace19": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace16": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalaceMajor": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace17": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace22": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace21": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace23": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace24": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace31": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace32": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace33": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace34": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace29": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace26": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace25": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace28": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace27": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace30": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace14": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace11": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace13": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace15": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace10": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace5": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace6": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace7": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace8": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SkyPalace9": [
+        [
+          "Chime",
+          "Cube",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "MirageTower9": [
+        [
+          "Chime",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "MirageTower13": [
+        [
+          "Chime",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "MirageTower10": [
+        [
+          "Chime",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "MirageTower12": [
+        [
+          "Chime",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "MirageTower11": [
+        [
+          "Chime",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "MirageTower1": [
+        [
+          "Chime",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "MirageTower2": [
+        [
+          "Chime",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "MirageTower4": [
+        [
+          "Chime",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "MirageTower3": [
+        [
+          "Chime",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "MirageTower8": [
+        [
+          "Chime",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "MirageTower7": [
+        [
+          "Chime",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "MirageTower6": [
+        [
+          "Chime",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Waterfall1": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Waterfall2": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Waterfall3": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Waterfall4": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Waterfall5": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Waterfall6": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine7": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine8": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine9": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine10": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine1": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine2": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine3": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine4": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine5": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine6": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine13": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine14": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine11": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine16": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrineLocked": [
+        [
+          "Key",
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine18": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine19": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine20": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine23": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine21": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine22": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine24": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine26": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine28": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine25": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine30": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine27": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine29": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrineMajor": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "SeaShrine12": [
+        [
+          "Oxyale",
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "GaiaShop3": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "King": [
+        []
+      ],
+      "Princess2": [
+        []
+      ],
+      "Astos": [
+        [
+          "Crown",
+          "Ship"
+        ],
+        [
+          "Crown",
+          "Canoe"
+        ]
+      ],
+      "Bikke": [
+        []
+      ],
+      "Matoya": [
+        [
+          "Crystal"
+        ]
+      ],
+      "CanoeSage": [
+        [
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe"
+        ]
+      ],
+      "ElfPrince": [
+        [
+          "Herb",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Herb"
+        ]
+      ],
+      "Nerrick": [
+        [
+          "Tnt"
+        ]
+      ],
+      "Smith": [
+        [
+          "Adamant"
+        ]
+      ],
+      "Sarda": [
+        [
+          "Ruby",
+          "Canal",
+          "Ship"
+        ],
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ],
+      "Fairy": [
+        [
+          "Canoe",
+          "Floater",
+          "Bottle"
+        ]
+      ],
+      "Lefein": [
+        [
+          "Canoe",
+          "Floater",
+          "Slab"
+        ]
+      ],
+      "CubeBot": [
+        [
+          "Canoe",
+          "Floater"
+        ]
+      ]
+    }
+  }
+}
