@@ -60,7 +60,7 @@ Pokemon Emerald:
   guaranteed_catch: 'true'
   normalize_encounter_rates: 'true'
   exp_modifier: 200
-  blind_trainers: 'true'
+  blind_trainers: 'false'
   purge_spinners: 'false'
   match_trainer_levels: off
   match_trainer_levels_bonus: 0
@@ -72,7 +72,7 @@ Pokemon Emerald:
   modify_118: 'true'
   free_fly_location: 'true'
   hm_requirements: vanilla
-  turbo_a: 'false'
+  turbo_a: 'true'
   receive_item_messages: progression
   remote_items: 'false'
   music: 'false'
