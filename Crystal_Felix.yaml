@@ -66,10 +66,11 @@ Pokemon Crystal:
     red: 50
 
   johto_only:
-    # Excludes all of Kanto, disables early Kanto access
-    #     Forces Goal to Elite Four and Badges to ≤8
-    false: 50
-    true: 0
+    #     Forces Goal to Elite Four unless Silver Cave is included.
+    #     Goal badges will be limited to 8 if badges are shuffled or vanilla
+    off: 50
+    on: 0
+    include_silver_cave: 0
 
   elite_four_badges:
     # Number of badges required to enter Victory Road
@@ -114,10 +115,30 @@ Pokemon Crystal:
     false: 0
     true: 50
 
+  trainersanity_alerts:
+    # Shows a message box or plays a sound for trainersanity checks
+    no_alerts: 0
+    message_box: 50
+    sound_only: 0
+
+
   randomize_pokegear:
     # Shuffles the Pokegear and cards into the pool
     false: 0
     true: 50
+
+  randomize_berry_trees:
+    # Shuffles berry tree items into the pool
+    false: 0
+    true: 50
+
+  free_fly_location:
+    # If enabled, unlocks a random fly location for free.
+    # If free_fly_and_map_card is selected, an extra fly location
+    # is unlocked when the pokegear and map card are obtained
+    off: 0
+    free_fly: 0
+    free_fly_and_map_card: 50
 
   randomize_starters:
     # Randomizes species of starter Pokemon
