@@ -603,8 +603,8 @@ Pokemon Emerald:
 
   turbo_a:
     # Holding A will advance most text automatically.
-    'false': 100
-    'true': 0
+    'false': 0
+    'true': 100
 
   receive_item_messages:
     # Determines whether you receive an in-game notification when receiving an item. Items can still only be received in the overworld.
