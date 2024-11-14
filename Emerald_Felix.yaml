@@ -122,8 +122,8 @@ Pokemon Emerald:
 
   hidden_items:
     # Adds hidden items to the pool.
-    'false': 0
-    'true': 100
+    'false': 100
+    'true': 0
 
   npc_gifts:
     # Adds most gifts received from NPCs to the pool (not including key items or HMs).
