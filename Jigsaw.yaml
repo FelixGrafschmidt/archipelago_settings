@@ -274,6 +274,31 @@ Jigsaw:
     random-low: 0
     random-high: 0
 
+  rotate_traps:
+    # Adds a rotate trap to the game, that randomly rotates an unmerged piece.
+    # This trap is only added when the rotations option is enabled.
+    # (I might change this option and allow for more of these later)
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 1
+    0: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  swap_traps:
+    # Adds a swap trap to the game, that randomly swaps two unmerged pieces.
+    # (I might change this option and allow for more of these later)
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 1
+    0: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
   # Item & Location Options
   local_items:
     # Forces these items to be in their native world.
