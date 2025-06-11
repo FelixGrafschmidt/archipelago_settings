@@ -74,7 +74,7 @@ Jigsaw:
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 4
     # Maximum value is 2000
-    300: 50
+    150: 50
     random: 0
     random-low: 0
     random-high: 0
