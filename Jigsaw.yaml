@@ -25,7 +25,7 @@
 #     {PLAYER} will be replaced with the player's slot number, if that slot number is greater than 1.
 #     {number} will be replaced with the counter value of the name.
 #     {NUMBER} will be replaced with the counter value of the name, if the counter value is greater than 1.
-name: Jigsaw
+name: Jigsaw {NUMBER}
 
 # Used to describe your yaml. Useful if you have multiple files.
 description: Default Jigsaw Template
@@ -200,15 +200,15 @@ Jigsaw:
     # You will first get all pieces of one of the first quadrant, then for the second, etc.
     # This makes it so that you're basically starting and finishing a section four times in your playthrough.
     # This may be nice for big puzzles, it decreases the pressure at the start, while making the ending more interesting.
-    random_order: 50
-    corners_edges_normal: 0
-    normal_edges_corners: 0
-    edges_normal_corners: 0
-    corners_normal_edges: 0
-    normal_corners_edges: 0
-    edges_corners_normal: 0
+    random_order: 10
+    corners_edges_normal: 10
+    normal_edges_corners: 10
+    edges_normal_corners: 10
+    corners_normal_edges: 10
+    normal_corners_edges: 10
+    edges_corners_normal: 10
     four_parts: 0
-    four_parts_non_rotated: 0
+    four_parts_non_rotated: 10
 
   strictness_piece_order_type:
     # This option determines how strictly the above piece type order is followed.
@@ -227,8 +227,8 @@ Jigsaw:
     # random_order: pieces are added in random order with no extra constraints whatsoever
     # every_piece_fits: every piece you receive, will be able to merge with another piece
     # least_merges_possible: you will receive pieces in an order that gives the least number of possible merges
-    random_order: 50
-    every_piece_fits: 0
+    random_order: 0
+    every_piece_fits: 50
     least_merges_possible: 0
 
   strictness_piece_order:
