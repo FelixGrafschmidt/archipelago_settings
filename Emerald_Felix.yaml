@@ -25,7 +25,7 @@
 #     {PLAYER} will be replaced with the player's slot number, if that slot number is greater than 1.
 #     {number} will be replaced with the counter value of the name.
 #     {NUMBER} will be replaced with the counter value of the name, if the counter value is greater than 1.
-name: Emerald
+name: Emerald {NUMBER}
 
 # Used to describe your yaml. Useful if you have multiple files.
 description: Default Pokemon Emerald Template
@@ -68,7 +68,7 @@ Pokemon Emerald:
     # - Norman: Defeat Norman in Petalburg Gym
     # - Legendary Hunt: Defeat or catch legendary pokemon (or whatever was randomized into their encounters)
     champion: 0
-    steven: 100
+    steven: 50
     norman: 0
     legendary_hunt: 0
 
@@ -102,17 +102,17 @@ Pokemon Emerald:
   bikes:
     # Adds the Mach Bike and Acro Bike to the pool.
     'false': 0
-    'true': 100
+    'true': 50
 
   event_tickets:
     # Adds the event tickets to the pool, which let you access legendaries by sailing from Lilycove.
     'false': 0
-    'true': 100
+    'true': 50
 
   rods:
     # Adds fishing rods to the pool.
     'false': 0
-    'true': 100
+    'true': 50
 
   overworld_items:
     # Adds items on the ground with a Pokeball sprite to the pool.
@@ -615,13 +615,13 @@ Pokemon Emerald:
 
   hm_requirements:
     # Sets the requirements to use HMs outside of battle.
-    vanilla: 50
-    fly_without_badge: 0
+    vanilla: 0
+    fly_without_badge: 50
 
   turbo_a:
     # Holding A will advance most text automatically.
-    'false': 50
-    'true': 0
+    'false': 0
+    'true': 50
 
   receive_item_messages:
     # Determines whether you receive an in-game notification when receiving an item. Items can still only be received in the overworld.

@@ -35,7 +35,12 @@ requires:
   version: 0.6.0 # Version of Archipelago required for this yaml to work as expected.
 
 Jigsaw:
-  # Game Options
+
+
+  ################
+  # Game Options #
+  ################
+
   progression_balancing:
     # A system that can move progression earlier, to try and prevent the player from getting stuck and bored early.
     #
@@ -60,16 +65,15 @@ Jigsaw:
     full: 50
     minimal: 0
 
-  enable_forced_local_filler_items:
-    # Old option, overrides PlacementOfFillers
-    'false': 0
-    'true': 50
 
-  # Important: gameplay options
+  ###############################
+  # Important options: gameplay #
+  ###############################
+
   number_of_pieces:
     # Approximate number of pieces in the puzzle.
     # Note that this game is more difficult than regular jigsaw puzzles, because you don't start with all pieces :)
-    # Also make sure the pieces fit on your screen if you choose more than 1000.
+    # Also make sure the pieces are not too small on your screen if you choose many.
     #
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 4
@@ -85,26 +89,35 @@ Jigsaw:
     per_90_degrees: 0
     per_180_degrees: 0
 
-  # Important: image
+
+  ############################
+  # Important options: image #
+  ############################
+
   orientation_of_image:
     # If you're using a custom image, select the orientation here.
+    # This affects the shape of the puzzle pieces.
     square: 0
     landscape: 50
     portrait: 0
 
   which_image:
     # Only if you selected the landscape orientation option.
-    # This option will decide which landscape picture will be set for you. Don't worry, you can change it in the game.
+    # This option decides which landscape picture will be set for you. Don't worry, you can change it in the game.
     # Every number corresponds to a set image. See the images here: https://jigsaw-ap.netlify.app/images.html
     #
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 1
-    # Maximum value is 49
+    # Maximum value is 51
     random: 50
     random-low: 0
     random-high: 0
 
-  # Optional: extra pieces, items and checks
+
+  ####################################################
+  # Optional options: extra pieces, items and checks #
+  ####################################################
+
   percentage_of_extra_pieces:
     # This option allows for there being more pieces in the pool than necessary.
     # When you have all your items already, the additional pieces don't do anything anymore.
@@ -120,30 +133,23 @@ Jigsaw:
     random-low: 0
     random-high: 0
 
-  maximum_number_of_real_items:
-    # Jigsaw has two types of items: "real items" and forced local filler items.
-    # All puzzle pieces you want are contained in the "real items" (these items can give multiple pieces at once).
-    #
-    # Only the "real items" are shuffled across the multiworld.
-    # The forced local filler items have no effect on the multiworld and are just to make every merge be a check.
-    # They only show everybody how good you're puzzling and give you additional dopamine every time you merge.
-    #
-    # Having too many real items may hurt the multiworld: in many cases, it is not fun to have 1000 "1 Puzzle Piece"
-    # items in the itempool, especially not for other players that may have way less checks or really hard checks.
+  number_of_piece_bundles:
+    # The (maximum) number of piece bundles; items that give you 1 or more pieces.
+    # Having too many of these may hurt the multiworld and put too much emphasis on the jigsaw puzzle.
     # For solo games I would recommend to put this to the maximum.
     #
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 25
     # Maximum value is 2000
-    300: 50
+    150: 50
     random: 0
     random-low: 0
     random-high: 0
 
-  minimum_number_of_pieces_per_real_item:
-    # Remember the real items that are shuffled across the multiworld?
-    # This option determines the minimum number of pieces that you will be given per item.
-    # Finding "1 Puzzle Piece" items may not be fun, so this option can make it least at 2 pieces per item for example.
+  minimum_number_of_pieces_per_bundle:
+    # This is another way to choose the number of piece bundles.
+    # With this option you can choose the minimum number of pieces per bundle.
+    # For example if you make this 2, you will get at least 2 pieces at a time. Probably more fun for others!
     # For solo games I would recommend to put this to 1.
     #
     # You can define additional values between the minimum and maximum values.
@@ -154,52 +160,58 @@ Jigsaw:
     random-low: 0
     random-high: 0
 
-  placement_of_fillers:
-    # This option determines if and how filler items are used. Default is probably fine :)
-    #
-    # local_only:
-    # Creates filler items so every merge is a check, but they are not shuffled across the multiworld.
-    # Probably ideal: doesn't overload the pool with filler items, but still gives dopamine rush every time you merge.
-    #
-    # global: creates filler items so every merge is a check, and they are shuffled across the multiworld.
-    # Warning: use this carefully, as this may overload other games with useless filler items.
-    # You can use the invisible percentage_of_fillers_in_itempool option to change the percentage of fillers in the itempool.
-    # Default is 100%. So for example if you want 60%:
-    #   percentage_of_fillers_globally:
-    #     60: 50
-    #
-    # none: no filler items are added to the itempool.
-    local_only: 50
-    global: 0
-    none: 0
+  add_fillers:
+    # Enabling this option makes every merge a check and adds filler items.
+    # The next option allows you to choose how many are local and how many are shuffled across the multiworld.
+    'false': 50
+    'true': 0
 
-  permillage_of_checks_out_of_logic:
-    # It might be hard to find the one connection you can make.
-    # As such, this option will make it so that there are always additional checks not considered by logic.
-    # This makes it easier to get "all your checks in logic".
-    # Of course this won't make a difference at the very end when few merges are left.
-    #
-    # A "permillage" is 1/10 of a percentage. 1 percent = 10 permillage
-    # The number of checks out of logic is: [total number of pieces] * [this option] / 1000 rounded up.
+  percentage_fillers_itempool:
+    # If fillers are added, this option determines how many of the fillers are shuffled across the multiworld.
     #
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 0
     # Maximum value is 100
-    5: 50
+    0: 50
     random: 0
     random-low: 0
     random-high: 0
 
-  # Optional: piece order
+  checks_out_of_logic:
+    # This option will make it so that there are always additional checks not considered by logic.
+    # This makes it easier to get "all your checks in logic".
+    # Of course this won't make a difference at the very end when few merges are left.
+    # The number of checks out of logic will never be more than 10% of the number of pieces.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 200
+    0: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+
+  #################################
+  # Optional options: piece order #
+  #################################
+
   piece_order_type:
-    # This option affects the order in which you receive puzzle piece types (corners, edges, normal).
+    # This option affects the order in which you receive puzzle piece types.
     # This is prioritized over the Piece Order option.
+    #
+    # random_order: no order is followed
+    #
+    # corners_edges_normal: you will first get all corner pieces, then edge pieces, then normal pieces
+    # (...)
     #
     # four_parts and four_parts_non_rotated:
     # The board will be divided into four (rotated) quadrants.
     # You will first get all pieces of one of the first quadrant, then for the second, etc.
     # This makes it so that you're basically starting and finishing a section four times in your playthrough.
     # This may be nice for big puzzles, it decreases the pressure at the start, while making the ending more interesting.
+    # four_parts_non_rotated always gives axis-aligned quadrants (rectangular grid-like splits, like a +).
+    # four_parts can involve rotated splits, so the quadrants may be split like + or × etc.
     random_order: 10
     corners_edges_normal: 10
     normal_edges_corners: 10
@@ -224,7 +236,7 @@ Jigsaw:
 
   piece_order:
     # This option affects the order in which you receive puzzle pieces.
-    # random_order: pieces are added in random order with no extra constraints whatsoever
+    # random_order: pieces are added in random order with no extra constraints
     # every_piece_fits: every piece you receive, will be able to merge with another piece
     # least_merges_possible: you will receive pieces in an order that gives the least number of possible merges
     random_order: 0
@@ -243,63 +255,133 @@ Jigsaw:
     random-low: 0
     random-high: 0
 
-  # Optional: others
+
+  #######################################
+  # Optional options: traps & deathlink #
+  #######################################
+
+  starting_fake_pieces:
+    # Number of fake pieces that appear at the start of the game.
+    # These pieces cannot merge with any other pieces.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 500
+    0: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  number_of_fake_piece_bundles:
+    # Number of fake piece bundles in the itempool.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 50
+    0: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  impact_of_fake_piece_bundles:
+    # How many fake pieces each fake piece bundle gives.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 10
+    1: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  number_of_rotate_traps:
+    # Number of rotate traps in the itempool, that randomly rotate small clusters (<10 pieces).
+    # This trap is only added when the rotations option is enabled.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 500
+    0: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  impact_of_rotate_traps:
+    # How many clusters each rotate trap affects.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 10
+    1: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  number_of_swap_traps:
+    # Number of swap traps in the itempool, that randomly swap two small clusters (<10 pieces).
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 500
+    0: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  impact_of_swap_traps:
+    # How many clusters each swap trap affects.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 10
+    1: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  death_link:
+    # When someone else dies, you'll get rotate traps and swap traps.
+    # The number you set here determines how many traps you get.
+    # If you set this to 0, deathlink is disabled.
+    # (Jigsaw will never trigger death link.)
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 10
+    0: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+
+  ###########################
+  # Optional options: other #
+  ###########################
+
   enable_clues:
-    # Enable clues for the jigsaw puzzle, which shows the outline of pieces that can merge.
-    # If enabled, can be used as many times as you want.
+    # Enable clues for the jigsaw puzzle.
+    # If enabled, there is a button that shows the outline of pieces that can merge (unlimited uses).
     # If disabled, the button is simply not there.
     'false': 0
     'true': 50
 
-  fake_pieces:
-    # Adds a fake piece to start with and adds a fake piece to the itempool. Just for fun!
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is 0
-    # Maximum value is 1
-    0: 50
-    random: 0
-    random-low: 0
-    random-high: 0
-
   total_size_of_image:
-    # The percentage of your game that makes up the image and the puzzle. Default should be fine,
-    # but you can change it if you want to make it smaller or bigger.
+    # How large the pieces will be. 100 means the puzzle is maximum size. 50 means width and height are halved.
+    # If you want a lot of free space around the puzzle, you can set this to a lower value.
     #
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 30
     # Maximum value is 100
-    100: 50
+    95: 50
     random: 0
     random-low: 0
     random-high: 0
 
-  rotate_traps:
-    # Adds a rotate trap to the game, that randomly rotates an unmerged piece.
-    # This trap is only added when the rotations option is enabled.
-    # (I might change this option and allow for more of these later)
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is 0
-    # Maximum value is 1
-    0: 50
-    random: 0
-    random-low: 0
-    random-high: 0
 
-  swap_traps:
-    # Adds a swap trap to the game, that randomly swaps two unmerged pieces.
-    # (I might change this option and allow for more of these later)
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is 0
-    # Maximum value is 1
-    0: 50
-    random: 0
-    random-low: 0
-    random-high: 0
+  ###########################
+  # Item & Location Options #
+  ###########################
 
-  # Item & Location Options
   local_items:
     # Forces these items to be in their native world.
     []
