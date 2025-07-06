@@ -153,8 +153,8 @@ Pokemon Emerald:
     # Trainers are no longer missable. Trainers no longer give you money for winning. Each trainer adds a valuable item (Nugget, Stardust, etc.) to the pool.
     #
     # Warning: This adds a lot of locations and will slow you down significantly.
-    'false': 50
-    'true': 0
+    'false': 0
+    'true': 50
 
   item_pool_type:
     # Determines which non-progression items get put into the item pool.

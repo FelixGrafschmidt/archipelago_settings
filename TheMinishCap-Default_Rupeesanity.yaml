@@ -167,8 +167,8 @@ The Minish Cap:
   rupeesanity:
     # Add all rupees locations to the pool to be randomized. This setting will not shuffle Rupees that also belong to
     # another pool, i.e. An underwater rupee will instead be randomized by shuffle_underwater
-    'false': 50
-    'true': 0
+    'false': 0
+    'true': 50
 
   shuffle_pots:
     # Add all special pots that drop a unique item to the pool. Includes the LonLon Ranch Pot.

@@ -693,8 +693,8 @@ Pokemon Crystal:
   # Trainersanity
   trainersanity:
     # Adds checks for defeating trainers
-    'false': 50
-    'true': 0
+    'false': 0
+    'true': 50
 
   trainersanity_alerts:
     # Shows a message box or plays a sound for Trainersanity checks
