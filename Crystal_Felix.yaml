@@ -32,7 +32,7 @@ description: Default Pokemon Crystal Template
 
 game: Pokemon Crystal
 requires:
-  version: 0.6.1 # Version of Archipelago required for this yaml to work as expected.
+  version: 0.6.2 # Version of Archipelago required for this yaml to work as expected.
 
 Pokemon Crystal:
   # Game Options
@@ -59,6 +59,10 @@ Pokemon Crystal:
     # **Minimal:** ensure what is needed to reach your goal can be acquired.
     full: 50
     minimal: 0
+
+  plando_items:
+    # Generic items plando.
+    []
 
   goal:
     # Elite Four: Defeat the Champion and enter the Hall of Fame
@@ -228,6 +232,13 @@ Pokemon Crystal:
     vanilla: 25
     boulder_badge: 25
 
+  mount_mortar_access:
+    # Sets the requirement to pass through Mount Mortar east <> west
+    # Vanilla: No requirement
+    # Rock Smash: Rock Smash is required
+    vanilla: 0
+    rock_smash: 50
+
   red_gyarados_access:
     # Sets whether the Red Gyarados requires Whirlpool to access
     vanilla: 0
@@ -302,6 +313,22 @@ Pokemon Crystal:
     'false': 0
     'true': 50
 
+  randomize_pokemon_requests:
+    # Shuffles the items given by Bill's Grandpa after showing him specific Pokemon into the pool
+    # Optionally also randomizes the requested Pokemon
+    'off': 50
+    items: 0
+    pokemon: 0
+    items_and_pokemon: 0
+
+  randomize_fly_unlocks:
+    # Shuffles Fly destination unlocks into the pool
+    #
+    # Indigo Plateau is not included.
+    'off': 0
+    'on': 50
+    exclude_silver_cave: 0
+
   require_itemfinder:
     # Hidden items require Itemfinder in logic
     #
@@ -319,13 +346,78 @@ Pokemon Crystal:
     'false': 50
     'true': 0
 
+  # Shopsanity
+  shopsanity:
+    # Adds shop purchases as locations, items in shops are added to the item pool
+    # - Johto Marts: Adds Johto Poke Marts, including the Goldenrod Dept. Store.
+    # - Kanto Marts: Adds Kanto Poke Marts, including the Celadon Dept. Store.
+    # - Blue Card: Adds the Blue Card prize shop, accessing this shop requires the Blue Card and buying items requires
+    # points. Five Blue Card Points are added to the item pool. Points are not spent when purchasing.
+    # - Game Corners: The Game Corner TM shops are added.
+    # - Apricorns: Kurt's Apricorn Ball shop is added, each slot requires a different Apricorn. Apricorns are progression.
+    #
+    # IMPORTANT NOTE: There is a non-randomized shop on Pokecenter 2F, you can always buy Poke Balls, Potions, Escape
+    # Ropes and Repels there.
+    ["Johto Marts", "Kanto Marts", "Blue Card", "Game Corners", "Apricorns"]
+
+  shopsanity_prices:
+    # Sets how shop item prices are determined when Shopsanity is enabled
+    # - Vanilla: Shop prices are unchanged
+    # - Item Price: Shop prices are determined by the value of the item being sold
+    # - Spheres: Shop prices are determined by sphere access
+    # - Classification: Shop prices are determined by item classifications (Progression, Useful, Filler/Trap)
+    # - Spheres and Classifications: Shop prices are determined by both sphere access and item classifications
+    # - Completely Random: Shop prices will be completely random
+    vanilla: 0
+    item_price: 0
+    spheres: 0
+    classification: 0
+    spheres_and_classification: 50
+    completely_random: 0
+
+  shopsanity_minimum_price:
+    # Sets the minimum cost of shop items when Shopsanity is enabled
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 10000
+    100: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  shopsanity_maximum_price:
+    # Sets the maximum cost of shop items when Shopsanity is enabled
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 10000
+    3000: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  provide_shop_hints:
+    # Sends out hints when a randomized shop is accessed
+    'off': 50
+    progression: 0
+    progression_and_useful: 0
+    all: 0
+
+  shopsanity_restrict_rare_candies:
+    # Makes Rare Candies in shops only purchasable once
+    'false': 50
+    'true': 0
+
   # HMs
   hm_compatibility:
     # Percent chance for Pokemon to be compatible with each HM
     # Headbutt and Rock Smash are considered HMs when applying compatibility
     #
+    # Minimal compatibility will ensure only the minimum required number of Pokemon can learn each HM, usually one
+    #
     # You can define additional values between the minimum and maximum values.
-    # Minimum value is 50
+    # Minimum value is 0
     # Maximum value is 100
     random: 0
     random-low: 0
@@ -375,8 +467,18 @@ Pokemon Crystal:
     # If this option is enabled, you will be able to Fly before being forced to use an item to progress
     # Early Fly is a best effort setting, if Fly and its badge cannot be placed early, then they will be placed
     #     randomly
-    'false': 0
-    'true': 50
+    'false': 50
+    'true': 0
+
+  fly_cheese:
+    # Determines whether the Vermilion and Mahogany Fly unlocks can be accessed from behind Snorlax and the
+    # Ragecandybar salesman respectively
+    # - Out of logic allows access but does not consider them in logic
+    # - Disallow prevents access to Fly unlocks beyond the roadblocks
+    # - In logic allows access and considers them in logic
+    out_of_logic: 0
+    disallow: 0
+    in_logic: 50
 
   # Pokemon
   randomize_wilds:
@@ -427,6 +529,28 @@ Pokemon Crystal:
     follow_evolutions: 0
     completely_random: 0
 
+  randomize_evolution:
+    # - Vanilla: Pokemon evolve into the same Pokemon they do in vanilla
+    # - Match a Type: Pokemon evolve into a random Pokemon with a higher base stat total, that shares at least one type with it.
+    # - Increase BST: Pokemon evolve into a random Pokemon with a higher base stat total.
+    #
+    # Note: This also affects breeding, when generating an egg the game will follow the evolution path backwards to
+    # the base form. If the evolution path splits then the Pokemon with the lower ID will be selected.
+    #
+    # Note: If random BST, random types, or the evolution blocklist cause a Pokemon to have no valid evolution within
+    # your chosen setting here, it will evolve into the closest available thing to a valid evolution.
+    #
+    # Note: All Pokemon will be standardized to the medium-fast EXP curve when any evolution randomization is enabled.
+    vanilla: 0
+    match_a_type: 50
+    increase_bst: 0
+
+  evolution_blocklist:
+    # No Pokemon will evolve into these Pokemon. Does nothing if evolution is not randomized.
+    # You can use "_Legendaries" as a shortcut for all legendary Pokemon.
+    # Beware that this blocklist will not be ignored even if it would cause odd evolutions.
+    []
+
   randomize_trades:
     # Randomizes species of in-game trades
     vanilla: 0
@@ -437,12 +561,12 @@ Pokemon Crystal:
   encounter_grouping:
     # Determines how randomized wild Pokemon are grouped in encounter tables.
     #
-    # All Split: Each encounter area will have each slot randomized separately. For example, grass areas will have seven
-    #     randomized encounter slots.
-    # One to One: Each encounter area will retain its vanilla slot grouping. For example, if an area has two encounters
-    #     in vanilla, it will be randomized as two slots.
-    # One per Method: Each encounter method on a route will be treated as a single slot. For example, the grass on a route
-    #  will contain only a single encounter. Each rod is a separate encounter.
+    # - All Split: Each encounter area will have each slot randomized separately. For example, grass areas will have seven
+    # randomized encounter slots.
+    # - One to One: Each encounter area will retain its vanilla slot grouping. For example, if an area has two encounters
+    # in vanilla, it will be randomized as two slots.
+    # - One per Method: Each encounter method on a route will be treated as a single slot. For example, the grass on a route
+    # will contain only a single encounter. Each rod is a separate encounter.
     #
     # This setting has no effect if wild Pokemon are not randomized.
     all_split: 50
@@ -514,9 +638,9 @@ Pokemon Crystal:
     # You can define additional values between the minimum and maximum values.
     # Minimum value is -1
     # Maximum value is 100
-    random: 50
+    random: 0
     random-low: 0
-    random-high: 0
+    random-high: 50
     vanilla: 0 # equivalent to -1
 
   metronome_only:
@@ -537,6 +661,7 @@ Pokemon Crystal:
     #
     # Full Exclude Accuracy: Fully randomizes move Power and PP
     # Randomizes each move's Power [20-150], PP [5-40] linearly. All possible values have the same weight.
+    # Multi-hit moves have their power divided by their average hit count.
     #
     # Full: Previous + also randomizes accuracy.
     # Accuracy has a flat chance of 70% to be 100%, if not it is linearly distributed between 30-100.
@@ -546,22 +671,35 @@ Pokemon Crystal:
     full_exclude_accuracy: 0
     full: 0
 
+  hm_power_cap:
+    # Lowers the power of damaging HM moves that exceed the set power down to match it.
+    # Headbutt and Rock Smash are considered HMs for this setting.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 20
+    # Maximum value is 255
+    random: 0
+    random-low: 0
+    random-high: 0
+    none: 50 # equivalent to 255
+
   randomize_tm_moves:
     # Randomizes the moves available as TMs
-    'false': 0
-    'true': 50
+    'false': 50
+    'true': 0
 
   tm_compatibility:
     # Percent chance for Pokemon to be compatible with each TM
     # Headbutt and Rock Smash are considered HMs when applying compatibility
     #
     # You can define additional values between the minimum and maximum values.
-    # Minimum value is 1
+    # Minimum value is 0
     # Maximum value is 100
     random: 0
     random-low: 0
     random-high: 0
-    vanilla: 0 # equivalent to 0
+    vanilla: 0 # equivalent to -1
+    none: 0 # equivalent to 0
     fully_compatible: 50 # equivalent to 100
 
   reusable_tms:
@@ -570,9 +708,15 @@ Pokemon Crystal:
     'true': 50
 
   move_blocklist:
-    # Pokemon won't learn these moves via learnsets and no TM will contain them.
+    # Pokemon won't learn these moves via learnsets.
     # Moves should be provided in the form: "Ice Beam"
-    # Does not apply to vanilla learnsets or vanilla TMs
+    # Does not apply to vanilla learnsets
+    []
+
+  tm_blocklist:
+    # No TM will contain these moves.
+    # Moves should be provided in the form: "Ice Beam"
+    # Does not apply to vanilla TMs
     []
 
   # Trainers
@@ -691,13 +835,41 @@ Pokemon Crystal:
     available_early: 0
 
   # Trainersanity
-  trainersanity:
-    # Adds checks for defeating trainers
-    'false': 50
-    'true': 0
+  johto_trainersanity:
+    # Adds checks for defeating Johto trainers.
+    #
+    # You can turn trainers that have checks grayscale by setting the "trainersanity_indication" in-game option.
+    #
+    # Trainers are no longer missable. Each trainer will add a random filler item into the pool.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 223
+    random: 0
+    random-low: 0
+    random-high: 0
+    none: 50 # equivalent to 0
+    full: 0 # equivalent to 223
+
+  kanto_trainersanity:
+    # Adds checks for defeating Kanto trainers.
+    #
+    # You can turn trainers that have checks grayscale by setting the "trainersanity_indication" in-game option.
+    #
+    # Trainers are no longer missable. Each trainer will add a random filler item into the pool.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 119
+    random: 0
+    random-low: 0
+    random-high: 0
+    none: 50 # equivalent to 0
+    full: 0 # equivalent to 119
 
   trainersanity_alerts:
     # Shows a message box or plays a sound for Trainersanity checks
+    # Does not apply to some trainers with special handling
     no_alerts: 0
     message_box: 0
     sound_only: 50
@@ -709,8 +881,16 @@ Pokemon Crystal:
     # Swarms and roamers are NEVER in logic
     ['Land', 'Surfing', 'Fishing', 'Headbutt', 'Rock Smash']
 
+  enforce_wild_encounter_methods_logic:
+    # Sets whether the game will prevent capture of Pokemon found through disabled wild encounter methods
+    # Statics and roamers can always be caught
+    #
+    # You can always re-catch Pokemon you have already caught
+    'false': 50
+    'true': 0
+
   static_pokemon_required:
-    # Sets whether or not static Pokemon may be logically required
+    # Sets whether static Pokemon may be logically required
     'false': 0
     'true': 50
 
@@ -852,12 +1032,13 @@ Pokemon Crystal:
     # text_frame: 1-8 - Sets the textbox frame, "random" will pick a random frame
     # text_speed: mid/slow/fast/instant - Sets the speed at which text advances
     # time_of_day: auto/morn/day/nite - Sets a time of day override, auto follows the clock, "random" will pick a random time
+    # trainersanity_indication - Sets whether Trainersanity trainers have grayscale sprites until they are beaten
     # turbo_button: none/a/b/a_or_b - Sets which buttons auto advance text when held
     ap_item_sound: 'on'
     auto_run: 'off'
     battle_animations: speedy
     battle_move_stats: 'on'
-    battle_shift: shift
+    battle_shift: set
     bike_music: 'off'
     blind_trainers: 'on'
     catch_exp: 'on'
@@ -879,10 +1060,11 @@ Pokemon Crystal:
     text_frame: 1
     text_speed: instant
     time_of_day: auto
+    trainersanity_indication: 'off'
     turbo_button: a_or_b
 
   level_scaling:
-    # Sets whether Trainer levels are scaled based on sphere access.
+    # Sets whether Trainer, Wild Pokemon and Static Pokemon levels are scaled based on sphere access.
     #
     # - Off: Vanilla levels are used.
     # - Spheres: Levels are scaled based on sphere access only.
@@ -892,7 +1074,7 @@ Pokemon Crystal:
     spheres_and_distance: 50
 
   all_pokemon_seen:
-    # Start will all Pokemon seen in your Pokedex.
+    # Start with all Pokemon seen in your Pokedex.
     # This allows you to see where the Pokemon can be encountered in the wild.
     'false': 50
     'true': 0
@@ -903,7 +1085,8 @@ Pokemon Crystal:
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 0
     # Maximum value is 999999
-    random: 50
+    random: 0
+    100000: 50
     random-low: 0
     random-high: 0
     vanilla: 0 # equivalent to 3000
@@ -967,8 +1150,11 @@ Pokemon Crystal:
 
   randomize_music:
     # Randomize all music
-    'false': 50
-    'true': 0
+    # - Shuffle will map each music track to a new track
+    # - Completely Random will map each music area to a new track
+    'off': 50
+    shuffle: 0
+    completely_random: 0
 
   # :3
   enable_mischief:
@@ -996,8 +1182,8 @@ Pokemon Crystal:
     {}
 
   start_hints:
-    # Start with these item's locations prefilled into the !hint command.
-    ["HM02 Fly", "Storm Badge", "Thunder Badge"]
+    # Start with these item's locations prefilled into the ``!hint`` command.
+    []
 
   start_location_hints:
     # Start with these locations and their item prefilled into the ``!hint`` command.

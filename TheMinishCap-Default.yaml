@@ -195,8 +195,8 @@ The Minish Cap:
 
   random_bottle_contents:
     # Put random contents into the shuffled bottles, these contents are never considered in logic
-    'false': 50
-    'true': 0
+    'false': 0
+    'true': 50
 
   early_weapon:
     # Force a weapon to be in your sphere 1.
@@ -276,7 +276,7 @@ The Minish Cap:
     #     shuffling across the pads
     # dhc_switches_no_four_sword: The clone puzzle that slashes 4 switches in DHC can be completed with a well placed spin
     #     attack
-    []
+    ["bombable_dust", "crenel_mushroom_gust_jar", "light_arrows_break_objects", "cape_extensions", "lake_minish_no_boots", "cabin_swim_no_lilypad"]
 
   # Item & Location Options
   local_items:

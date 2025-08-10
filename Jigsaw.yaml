@@ -83,6 +83,18 @@ Jigsaw:
     random-low: 0
     random-high: 0
 
+  grid_type:
+    # The type of grid used for the jigsaw puzzle. Square is the default and most common type.
+    # But hexagonal grids are also possible, which can make the puzzle more interesting.
+    #
+    # Also, these are meme options: all pieces are just in one row or one column.
+    # This means pieces are really long. Be careful with too many pieces,
+    # and consider using the "straight" shape you can select in the game before pressing start.
+    square: 0
+    hexagonal: 50
+    meme_one_row: 0
+    meme_one_column: 0
+
   rotations:
     # Something to make it more realistic but also much harder: pieces can be rotated!
     no_rotation: 50
@@ -108,7 +120,7 @@ Jigsaw:
     #
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 1
-    # Maximum value is 51
+    # Maximum value is 54
     random: 50
     random-low: 0
     random-high: 0
@@ -372,7 +384,7 @@ Jigsaw:
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 30
     # Maximum value is 100
-    95: 50
+    85: 50
     random: 0
     random-low: 0
     random-high: 0
