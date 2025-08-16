@@ -32,10 +32,12 @@ description: Default The Minish Cap Template
 
 game: The Minish Cap
 requires:
-  version: 0.6.1 # Version of Archipelago required for this yaml to work as expected.
+  version: 0.6.3 # Version of Archipelago required for this yaml to work as expected.
 
 The Minish Cap:
-  # Game Options
+  ################
+  # Game Options #
+  ################
   progression_balancing:
     # A system that can move progression earlier, to try and prevent the player from getting stuck and bored early.
     #
@@ -73,16 +75,27 @@ The Minish Cap:
     'false': 50
     'true': 0
 
-  goal_vaati:
-    # If enabled, DHC will open after completing Pedestal. Kill Vaati to goal.
-    # If disabled, complete Pedestal to goal. DHC/Vaati is unnecessary.
-    'false': 50
-    'true': 0
+  ########
+  # Goal #
+  ########
+  goal:
+    # 'Vaati' (default): Kill Vaati to goal. dhc_access and the ped requirements change how soon you can reach Vaati.
+    # 'Pedestal': Complete Pedestal to goal. The ped requirements change what's needed.
+    vaati: 0
+    pedestal: 50
+
+  dhc_access:
+    # When should DHC be accessible?
+    # If your goal is Vaati, dhc_access can only be open/closed, "pedestal" will default to closed instead.
+    # 'Closed' (false): DHC is never accessible. If your goal is Vaati, the room after pedestal goes straight to Vaati.
+    # 'Pedestal' (default): DHC is locked until pedestal is completed.
+    # 'Open' (true): DHC is accessible from the beginning. If your goal is Pedestal, activate pedestal from within DHC.
+    closed: 0
+    pedestal: 0
+    open: 50
 
   ped_elements:
     # How many elements are required to activate Pedestal?
-    # If GoalVaati is on then you need this many elements before DHC opens,
-    # otherwise you goal immediately upon having this many elements (and other goal conditions) and entering sanctuary
     #
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 0
@@ -93,9 +106,7 @@ The Minish Cap:
     random-high: 0
 
   ped_swords:
-    # What level of sword is required to activate Pedestal?
-    # If GoalVaati is on then you need at least this sword level before DHC opens,
-    # otherwise you goal immediately upon having this sword level (and other goal conditions) and entering sanctuary
+    # How many progressive swords are required to activate Pedestal?
     #
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 0
@@ -107,9 +118,6 @@ The Minish Cap:
 
   ped_dungeons:
     # How many dungeons are required to activate Pedestal?
-    # If GoalVaati is on then you need this many dungeons cleared before DHC opens,
-    # otherwise you goal immediately upon having this many dungeons cleared
-    # (and other goal conditions) and entering sanctuary
     #
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 0
@@ -119,18 +127,31 @@ The Minish Cap:
     random-low: 0
     random-high: 0
 
+  ###################
+  # Dungeon Shuffle #
+  ###################
+  shuffle_elements:
+    # Lock elements to specific locations.
+    #
+    # 'Vanilla': Elements are in the same dungeons as vanilla
+    # 'Dungeon Prize' (false/default): Elements are shuffled between the 6 dungeon prizes
+    # 'Anywhere' (true): Elements are in completely random locations
+    vanilla: 0
+    dungeon_prize: 0
+    anywhere: 50
+
   dungeon_small_keys:
-    # Own Dungeon (false/default): Randomized within the dungeon they're normally found in
-    # Anywhere (true): Items are in completely random locations
-    # *Note: If using anything other than "anywhere" and you include small keys in start_inventory_from_pool,
+    # 'Own Dungeon' (false/default): Randomized within the dungeon they're normally found in
+    # 'Anywhere' (true): Items are in completely random locations
+    # *Note*: If using anything other than "anywhere" and you include small keys in start_inventory_from_pool,
     #     you may get the warning "tried to remove items from their pool that don't exist". This is expected, the keys
     #     have safely been added to your inventory from the pool.
     own_dungeon: 0
     anywhere: 50
 
   dungeon_big_keys:
-    # Own Dungeon (default/false): Randomized within the dungeon they're normally found in
-    # Anywhere (true): Items are in completely random locations
+    # 'Own Dungeon' (false/default): Randomized within the dungeon they're normally found in
+    # 'Anywhere' (true): Items are in completely random locations
     # *Note: If using anything other than "anywhere" and you include big keys in start_inventory_from_pool,
     #     you may get the warning "tried to remove items from their pool that don't exist". This is expected, the keys
     #     have safely been added to your inventory from the pool.
@@ -138,8 +159,8 @@ The Minish Cap:
     anywhere: 50
 
   dungeon_maps:
-    # Own Dungeon (default/false): Randomized within the dungeon they're normally found in
-    # Anywhere (true): Items are in completely random locations
+    # 'Own Dungeon' (false/default): Randomized within the dungeon they're normally found in
+    # 'Anywhere' (true): Items are in completely random locations
     # *Note: If using anything other than "anywhere" and you include dungeon maps in start_inventory_from_pool,
     #     you may get the warning "tried to remove items from their pool that don't exist". This is expected, the maps
     #     have safely been added to your inventory from the pool.
@@ -147,26 +168,30 @@ The Minish Cap:
     anywhere: 50
 
   dungeon_compasses:
-    # Own Dungeon (default/false): Randomized within the dungeon they're normally found in
-    # Anywhere (true): Items are in completely random locations
+    # 'Own Dungeon' (false/default): Randomized within the dungeon they're normally found in
+    # 'Anywhere' (true): Items are in completely random locations
     # *Note: If using anything other than "anywhere" and you include dungeon compasses in start_inventory_from_pool,
     #     you may get the warning "tried to remove items from their pool that don't exist". This is expected, the compass
     #     has safely been added to your inventory from the pool.
     own_dungeon: 0
     anywhere: 50
 
-  shuffle_elements:
-    # Lock elements to specific locations
-    # Vanilla: Elements are in the same dungeons as vanilla
-    # Dungeon Prize (false/default): Elements are shuffled between the 6 dungeon prizes
-    # Anywhere (true): Elements are in completely random locations
-    vanilla: 0
-    dungeon_prize: 0
-    anywhere: 50
+  non_element_dungeons:
+    # Should dungeons that don't have elements restrict the items that can be placed in them?
+    # Only takes effect when shuffle_elements is dungeon_prize or vanilla and ped_dungeons is 4 or less.
+    #
+    # Standard: Non-Element dungeons are filled just like any other location with no restrictions.
+    # Excluded: Non-Element dungeons are automatically added to the excluded_locations list, only placing filler inside.
+    standard: 50
+    excluded: 0
 
+  ####################
+  # Location Shuffle #
+  ####################
   rupeesanity:
-    # Add all rupees locations to the pool to be randomized. This setting will not shuffle Rupees that also belong to
-    # another pool, i.e. An underwater rupee will instead be randomized by shuffle_underwater
+    # Add all rupees locations to the pool to be randomized.
+    # This setting will not shuffle Rupees that also belong to another pool.
+    #     Ex: An underwater rupee will instead be randomized by shuffle_underwater
     'false': 50
     'true': 0
 
@@ -185,19 +210,40 @@ The Minish Cap:
     'false': 0
     'true': 50
 
-  traps_enabled:
-    # Traps may be placed around the world. Traps for local items will have their
-    # sprite randomized to a local item before pickup. When picked up it'll turn
-    # into an exclamation mark (!) and activate a specific trap such as spawning
-    # enemies, setting you on fire, freezing you, etc.
-    'false': 50
-    'true': 0
-
-  random_bottle_contents:
-    # Put random contents into the shuffled bottles, these contents are never considered in logic
+  shuffle_gold_enemies:
+    # Add the drops from the 9 golden enemies to the pool.
     'false': 0
     'true': 50
 
+  cucco_rounds:
+    # How many rounds of the cucco catching minigame will be shuffled and playable?
+    # Rounds 1-9 are accessible from Sphere 1, Round 10 is accessible with either Roc's Cape or Flippers.
+    # Rounds are always included from the end to ensure the Round 10 reward is always accessible.
+    # Ex, if you play with 3 rounds, Rounds 8-10 are playable.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 10
+    0: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  goron_sets:
+    # How many sets of items do you want to purchase from the Goron Shop in town?
+    # There are 5 total sets with 3 items each.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 5
+    5: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  ###########
+  # Weapons #
+  ###########
   early_weapon:
     # Force a weapon to be in your sphere 1.
     # The weapon placed will be random based off the enabled `weapon` options.
@@ -242,9 +288,112 @@ The Minish Cap:
     'false': 50
     'true': 0
 
+  ###############
+  # Fast Travel #
+  ###############
+  dungeon_warp_dws:
+    # Whether you should start with the Blue/Red warps for DeepWood Shrine
+    none: 0
+    blue: 0
+    red: 0
+    both: 50
+
+  dungeon_warp_cof:
+    # Whether you should start with the Blue/Red warps for Cave of Flames
+    none: 0
+    blue: 0
+    red: 0
+    both: 50
+
+  dungeon_warp_fow:
+    # Whether you should start with the Blue/Red warps for Fortress of Winds
+    none: 0
+    blue: 0
+    red: 0
+    both: 50
+
+  dungeon_warp_tod:
+    # Whether you should start with the Blue/Red warps for Temple of Droplets
+    none: 0
+    blue: 0
+    red: 0
+    both: 50
+
+  dungeon_warp_pow:
+    # Whether you should start with the Blue/Red warps for Palace of Winds
+    none: 0
+    blue: 0
+    red: 0
+    both: 50
+
+  dungeon_warp_dhc:
+    # Whether you should start with the Blue/Red warps for Dark Hyrule Castle
+    none: 0
+    blue: 0
+    red: 0
+    both: 50
+
+  wind_crest_crenel:
+    # Whether you should start with the Mount Crenel Wind Crest
+    'false': 50
+    'true': 0
+
+  wind_crest_falls:
+    # Whether you should start with the Veil Falls Wind Crest
+    'false': 50
+    'true': 0
+
+  wind_crest_clouds:
+    # Whether you should start with the Cloud Tops Wind Crest
+    'false': 50
+    'true': 0
+
+  wind_crest_castor:
+    # Whether you should start with the Castor Wilds Wind Crest
+    'false': 50
+    'true': 0
+
+  wind_crest_south_field:
+    # Whether you should start with the South Field Wind Crest
+    'false': 50
+    'true': 0
+
+  wind_crest_minish_woods:
+    # Whether you should start with the Minish Woods Wind Crest
+    'false': 50
+    'true': 0
+
+  ########
+  # Misc #
+  ########
+  random_bottle_contents:
+    # Put random contents into the shuffled bottles, these contents are never considered in logic
+    'false': 0
+    'true': 50
+
+  traps_enabled:
+    # Traps may be placed around the world. Traps for local items will have their
+    # sprite randomized to a local item before pickup. When picked up it'll turn
+    # into an exclamation mark (!) and activate a specific trap such as spawning
+    # enemies, setting you on fire, freezing you, etc.
+    'false': 50
+    'true': 0
+
+  goron_jp_prices:
+    # Should the Goron Merchant use JP/US prices instead of EU prices for the item sets. They are as follows:
+    # EU 1st set: 200/100/50
+    # EU 2nd set: 300/200/100
+    # EU 3rd set: 400/300/200
+    # EU 4th set: 500/400/300
+    # EU 5th set: 600/500/400
+    # JP all sets: 300/200/50
+    'false': 0
+    'true': 50
+
+  ############
+  # Advanced #
+  ############
   tricks:
-    # mitts_farm_rupees: Mole Mitts may be required to farm rupees by digging an infinitely respawning red rupee next to
-    #     link's house
     # bombable_dust: Bombs may be required to blow away dust instead of Gust Jar
     # crenel_mushroom_gust_jar: The mushroom near the edge of a cliff on Mt Crenel may be required to be grabbed with the
     #     gust jar to climb higher
@@ -278,7 +427,9 @@ The Minish Cap:
     #     attack
     ["bombable_dust", "crenel_mushroom_gust_jar", "light_arrows_break_objects", "cape_extensions", "lake_minish_no_boots", "cabin_swim_no_lilypad"]
 
-  # Item & Location Options
+  ###########################
+  # Item & Location Options #
+  ###########################
   local_items:
     # Forces these items to be in their native world.
     []
@@ -307,17 +458,7 @@ The Minish Cap:
 
   exclude_locations:
     # Prevent these locations from having an important item.
-    ["Town Cuccos Lv 1 NPC",
-    "Town Cuccos Lv 2 NPC",
-    "Town Cuccos Lv 3 NPC",
-    "Town Cuccos Lv 4 NPC",
-    "Town Cuccos Lv 5 NPC",
-    "Town Cuccos Lv 6 NPC",
-    "Town Cuccos Lv 7 NPC",
-    "Town Cuccos Lv 8 NPC",
-    "Town Cuccos Lv 9 NPC",
-    "Town Cuccos NPC"
-    ]
+    []
 
   priority_locations:
     # Prevent these locations from having an unimportant item.
@@ -325,4 +466,8 @@ The Minish Cap:
 
   item_links:
     # Share part of your item pool with other players.
+    []
+
+  plando_items:
+    # Generic items plando.
     []
