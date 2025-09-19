@@ -32,10 +32,12 @@ description: Default Pokemon Crystal Template
 
 game: Pokemon Crystal
 requires:
-  version: 0.6.2 # Version of Archipelago required for this yaml to work as expected.
+  version: 0.6.3 # Version of Archipelago required for this yaml to work as expected.
 
 Pokemon Crystal:
-  # Game Options
+  ################
+  # Game Options #
+  ################
   progression_balancing:
     # A system that can move progression earlier, to try and prevent the player from getting stuck and bored early.
     #
@@ -60,17 +62,15 @@ Pokemon Crystal:
     full: 50
     minimal: 0
 
-  plando_items:
-    # Generic items plando.
-    []
-
   goal:
     # Elite Four: Defeat the Champion and enter the Hall of Fame
     # Red: Defeat Red at Mt. Silver
     elite_four: 0
     red: 50
 
-  # Map
+  #######
+  # Map #
+  #######
   randomize_starting_town:
     # Randomly chooses a town to start in.
     # Any Pokemon Center except Indigo Plateau, Cinnabar Island and Silver Cave can be chosen.
@@ -97,7 +97,9 @@ Pokemon Crystal:
     'on': 0
     include_silver_cave: 0
 
-  # Roadblocks
+  ##############
+  # Roadblocks #
+  ##############
   elite_four_requirement:
     # Sets the requirement to enter Victory Road
     badges: 50
@@ -180,10 +182,10 @@ Pokemon Crystal:
 
   kanto_access_requirement:
     # Sets the requirement to pass between Victory Road gate and Kanto
-    # Wake Snorlax: Wake the Snorlax outside of Diglett's Cave
-    # Badges: Requires the number of badges specified by kanto_access_count
-    # Gyms: Requires beating the number of gyms specified by kanto_access_count
-    # Become Champion: Defeat Lance and enter the Hall of Fame
+    # - Wake Snorlax: Wake the Snorlax outside of Diglett's Cave
+    # - Badges: Requires the number of badges specified by kanto_access_count
+    # - Gyms: Requires beating the number of gyms specified by kanto_access_count
+    # - Become Champion: Defeat Lance and enter the Hall of Fame
     #
     # This setting does nothing if Johto Only is enabled
     wake_snorlax: 25
@@ -203,13 +205,29 @@ Pokemon Crystal:
     random-low: 0
     random-high: 0
 
+  victory_road_access:
+    # Sets the requirement to pass through Victory Road to Indigo Plateau
+    # - Vanilla: No requirement
+    # - Strength: Strength is required
+    vanilla: 0
+    strength: 50
+
+  dark_areas:
+    # Sets which areas are dark until Flash is used
+    #
+    #     - "_All" includes all areas
+    #     - "_Random" has a 50% chance to include each area that is not already included
+    #
+    # Allowed areas: Burned Tower, Dark Cave, Digletts Cave, Dragons Den, Goldenrod Underground, Ice Path, Ilex Forest, Mount Moon, Mount Mortar, Olivine Lighthouse, Rock Tunnel, Silver Cave, Slowpoke Well, Tohjo Falls, Union Cave, Victory Road, Whirl Islands
+    ['_All']
+
   route_32_condition:
     # Sets the condition required to pass between the north and south parts of Route 32
-    # Egg from aide: Collect the Egg from the aide in the Violet City Pokemon Center after beating Falkner
-    # Any badge: Obtain any badge
-    # Any gym: Beat any gym
-    # Zephyr Badge: Obtain the Zephyr Badge
-    # None: No requirement
+    # - Egg from aide: Collect the Egg from the aide in the Violet City Pokemon Center after beating Falkner
+    # - Any badge: Obtain any badge
+    # - Any gym: Beat any gym
+    # - Zephyr Badge: Obtain the Zephyr Badge
+    # - None: No requirement
     egg_from_aide: 25
     any_badge: 25
     any_gym: 25
@@ -218,24 +236,24 @@ Pokemon Crystal:
 
   route_2_access:
     # Sets the roadblock for moving between the west of Route 2 and Diglett's cave
-    # Vanilla: Cut is required
-    # Ledge: A ledge is added north of Diglett's cave allowing east -> west access without Cut
-    # Open: No requirement
-    vanilla: 25
-    ledge: 25
+    # - Vanilla: Cut is required
+    # - Ledge: A ledge is added north of Diglett's cave allowing east -> west access without Cut
+    # - Open: No requirement
+    vanilla: 50
+    ledge: 50
     open: 0
 
   route_3_access:
     # Sets the roadblock for moving between Pewter City and Route 3
-    # Vanilla: No requirement
-    # Boulder Badge: The Boulder Badge is required to pass
-    vanilla: 25
-    boulder_badge: 25
+    # - Vanilla: No requirement
+    # - Boulder Badge: The Boulder Badge is required to pass
+    vanilla: 50
+    boulder_badge: 50
 
   mount_mortar_access:
     # Sets the requirement to pass through Mount Mortar east <> west
-    # Vanilla: No requirement
-    # Rock Smash: Rock Smash is required
+    # - Vanilla: No requirement
+    # - Rock Smash: Rock Smash is required
     vanilla: 0
     rock_smash: 50
 
@@ -246,24 +264,26 @@ Pokemon Crystal:
 
   blackthorn_dark_cave_access:
     # Sets the roadblock for travelling from Route 31 to Blackthorn City through Dark Cave
-    # Vanilla: Traversal is not possible
-    # Waterfall: A waterfall is added to the Violet side of Dark Cave and a ledge is removed on the Blackthorn side,
+    # - Vanilla: Traversal is not possible
+    # - Waterfall: A waterfall is added to the Violet side of Dark Cave and a ledge is removed on the Blackthorn side,
     # allowing passage with Flash, Surf and Waterfall
     vanilla: 0
     waterfall: 50
 
   national_park_access:
     # Sets the requirement to enter National Park
-    # Vanilla: No requirement
-    # Bicycle: The Bicycle is required
+    # - Vanilla: No requirement
+    # - Bicycle: The Bicycle is required
     vanilla: 0
     bicycle: 50
 
   saffron_gatehouse_tea:
     # Sets which Saffron City gatehouses require Tea to pass. Obtaining the Tea will unlock them all.
     # If any gatehouses are enabled, adds a new location in Celadon Mansion 1F and adds Tea to the item pool.
-    # Valid options are: North, East, South and West in any combination.
-    ["North", "East", "South", "West"]
+    # Valid options are: North, East, South, West, and _Random in any combination.
+    # _Random gives each gate that is not already included a 50% chance to be included.
+    # _All is shorthand for all valid options except _Random of course.
+    [_Random]
 
   remove_ilex_cut_tree:
     # Removes the Cut tree in Ilex Forest
@@ -288,12 +308,14 @@ Pokemon Crystal:
     'false': 0
     'true': 50
 
-  # Items
+  #########
+  # Items #
+  #########
   randomize_badges:
     # Shuffles gym badge locations into the pool
-    # Vanilla: Does not randomize gym badges
-    # Shuffle: Randomizes gym badges between gym leaders
-    # Completely Random: Randomizes badges with all other items
+    # - Vanilla: Does not randomize gym badges
+    # - Shuffle: Randomizes gym badges between gym leaders
+    # - Completely Random: Randomizes badges with all other items
     vanilla: 0
     shuffle: 0
     completely_random: 50
@@ -332,9 +354,9 @@ Pokemon Crystal:
   require_itemfinder:
     # Hidden items require Itemfinder in logic
     #
-    # Not Required: Hidden items do not require the Itemfinder at all
-    # Logically Required: Hidden items will expect you to have Itemfinder for logic but can be picked up without it
-    # Hard Required: Hidden items cannot be picked up without the Itemfinder
+    # - Not Required: Hidden items do not require the Itemfinder at all
+    # - Logically Required: Hidden items will expect you to have Itemfinder for logic but can be picked up without it
+    # - Hard Required: Hidden items cannot be picked up without the Itemfinder
     not_required: 0
     logically_required: 50
     hard_required: 0
@@ -346,7 +368,26 @@ Pokemon Crystal:
     'false': 50
     'true': 0
 
-  # Shopsanity
+  item_pool_fill:
+    # Changes how non-progression items are put into the pool.
+    #
+    # - Vanilla: item pool filled similarly to vanilla.
+    # - Balanced: all filler items uniformly randomized.
+    # - Youngster: item pool filled with items reflecting that of a young trainer.
+    # - Cooltrainer: item pool filled with items reflecting that of a cooltrainer.
+    vanilla: 50
+    balanced: 50
+    youngster: 50
+    cooltrainer: 50
+
+  exclude_post_goal_locations:
+    # Excludes locations which require becoming champion when goal is becoming champion
+    'false': 0
+    'true': 50
+
+  ##############
+  # Shopsanity #
+  ##############
   shopsanity:
     # Adds shop purchases as locations, items in shops are added to the item pool
     # - Johto Marts: Adds Johto Poke Marts, including the Goldenrod Dept. Store.
@@ -355,10 +396,11 @@ Pokemon Crystal:
     # points. Five Blue Card Points are added to the item pool. Points are not spent when purchasing.
     # - Game Corners: The Game Corner TM shops are added.
     # - Apricorns: Kurt's Apricorn Ball shop is added, each slot requires a different Apricorn. Apricorns are progression.
+    # - "_All": Includes all valid options.
+    # - "_Random": Each option that is not included has a 50% chance to be additionally included.
     #
-    # IMPORTANT NOTE: There is a non-randomized shop on Pokecenter 2F, you can always buy Poke Balls, Potions, Escape
-    # Ropes and Repels there.
-    ["Johto Marts", "Kanto Marts", "Blue Card", "Game Corners", "Apricorns"]
+    # IMPORTANT NOTE: There is a non-randomized shop on Pokecenter 2F, you can always buy Poke Balls, and Escape Ropes there.
+    [_All]
 
   shopsanity_prices:
     # Sets how shop item prices are determined when Shopsanity is enabled
@@ -409,7 +451,18 @@ Pokemon Crystal:
     'false': 50
     'true': 0
 
-  # HMs
+  shopsanity_x_items:
+    # Determines how Shopsanity treats X Items
+    # - Anywhere: X Items will be shuffled into the multiworld pool
+    # - Any Shop: At least one of each X Item will be available for purchase in a local shop
+    #
+    # NOTE: You cannot purchase any shop item repeatedly when Remote Items is active
+    anywhere: 50
+    any_shop: 0
+
+  #######
+  # HMs #
+  #######
   hm_compatibility:
     # Percent chance for Pokemon to be compatible with each HM
     # Headbutt and Rock Smash are considered HMs when applying compatibility
@@ -422,14 +475,15 @@ Pokemon Crystal:
     random: 0
     random-low: 0
     random-high: 0
-    vanilla: 0 # equivalent to 0
+    vanilla: 0 # equivalent to -1
+    minimal: 0 # equivalent to 0
     fully_compatible: 50 # equivalent to 100
 
   hm_badge_requirements:
-    # Vanilla: HMs require their vanilla badges
-    # No Badges: HMs do not require a badge to use
-    # Add Kanto: HMs can be used with the Johto or Kanto badge
-    # Regional: HMs can be used in Johto with the Johto badge or in Kanto with the Kanto badge
+    # - Vanilla: HMs require their vanilla badges
+    # - No Badges: HMs do not require a badge to use
+    # - Add Kanto: HMs can be used with the Johto or Kanto badge
+    # - Regional: HMs can be used in Johto with the Johto badge or in Kanto with the Kanto badge
     #     This does not apply to Fly which will accept either badge
     #     Routes 26, 27, 28 and Tohjo Falls are in Johto for HM purposes
     vanilla: 0
@@ -440,13 +494,34 @@ Pokemon Crystal:
   remove_badge_requirement:
     # Specify which HMs do not require a badge to use. This overrides the HM Badge Requirements setting.
     #
+    # "_Random" has a 50% chance to include HMs which are not already included
+    # "_All" will include all HMs
+    #
     # HMs should be provided in the form: "Fly".
     ["Fly"]
 
+  require_flash:
+    # Determines if the ability to use Flash is required to traverse dark areas
+    #
+    # - Not Required: Dark areas do not require Flash at all
+    # - Logically Required: Dark areas will expect you to be able to use Flash for logic, but you can traverse them without
+    # - Hard Required: You will not be able to traverse dark areas without the ability to use Flash there
+    not_required: 0
+    logically_required: 50
+    hard_required: 0
+
+  field_moves_always_usable:
+    # Decouples TM/HM Compatibility for Battle Moves and Field Moves.
+    # If enabled, Field Moves will always be considered usable, regardless of TM or HM compatibility. Badge requirements still apply.
+    #
+    # Ensure the "HMs Need Teaching" in-game option is also set to 'off' for this option to work as expected.
+    'false': 0
+    'true': 50
+
   free_fly_location:
-    # Free Fly: Unlocks a random Fly destination when Fly is obtained.
-    # Free Fly and Map Card: Additionally unlocks a random Fly destination after obtaining both the Pokegear and Map Card.
-    # Map Card: Unlocks a single random Fly destination only after obtaining both the Pokegear and Map card.
+    # - Free Fly: Unlocks a random Fly destination when Fly is obtained.
+    # - Free Fly and Map Card: Additionally unlocks a random Fly destination after obtaining both the Pokegear and Map Card.
+    # - Map Card: Unlocks a single random Fly destination only after obtaining both the Pokegear and Map card.
     #
     # Indigo Plateau cannot be chosen as a free Fly location.
     'off': 0
@@ -480,7 +555,9 @@ Pokemon Crystal:
     disallow: 0
     in_logic: 50
 
-  # Pokemon
+  ###########
+  # Pokemon #
+  ###########
   randomize_wilds:
     # Randomizes species of wild Pokemon
     #
@@ -502,7 +579,9 @@ Pokemon Crystal:
 
   randomize_static_pokemon:
     # Randomizes species of static Pokemon encounters
-    # This includes overworld Pokemon, gift Pokémon and gift egg Pokémon
+    # This includes overworld Pokemon, gift Pokemon and gift egg Pokemon
+    #
+    # NOTE: If this setting is disabled, the Odd Egg will still be fixed to a single possible Pokemon
     'false': 0
     'true': 50
 
@@ -514,17 +593,17 @@ Pokemon Crystal:
     []
 
   randomize_base_stats:
-    # Vanilla: Vanilla base stats
-    # Keep BST: Random base stats, but base stat total is preserved
-    # Completely Random: Base stats and BST are completely random
+    # - Vanilla: Vanilla base stats
+    # - Keep BST: Random base stats, but base stat total is preserved
+    # - Completely Random: Base stats and BST are completely random
     vanilla: 50
     keep_bst: 0
     completely_random: 0
 
   randomize_types:
-    # Vanilla: Vanilla Pokemon types
-    # Follow Evolutions: Types are randomized but preserved when evolved
-    # Completely Random: Types are completely random
+    # - Vanilla: Vanilla Pokemon types
+    # - Follow Evolutions: Types are randomized but preserved when evolved
+    # - Completely Random: Types are completely random
     vanilla: 50
     follow_evolutions: 0
     completely_random: 0
@@ -534,8 +613,8 @@ Pokemon Crystal:
     # - Match a Type: Pokemon evolve into a random Pokemon with a higher base stat total, that shares at least one type with it.
     # - Increase BST: Pokemon evolve into a random Pokemon with a higher base stat total.
     #
-    # Note: This also affects breeding, when generating an egg the game will follow the evolution path backwards to
-    # the base form. If the evolution path splits then the Pokemon with the lower ID will be selected.
+    # Note: This also affects breeding. When generating an egg the game will follow the evolution path backwards to
+    # the base form.
     #
     # Note: If random BST, random types, or the evolution blocklist cause a Pokemon to have no valid evolution within
     # your chosen setting here, it will evolve into the closest available thing to a valid evolution.
@@ -545,10 +624,37 @@ Pokemon Crystal:
     match_a_type: 50
     increase_bst: 0
 
+  convergent_evolution:
+    # Random evolution can cause multiple Pokemon to evolve into the same Pokemon.
+    # - Avoid: Each Pokemon can only evolve from one Pokemon.
+    # - Allow: Multiple Pokemon can evolve into the same Pokemon. Makes breeding weird.
+    #
+    # Note: Further affects breeding: If the evolution path splits, then the Pokemon with the lower ID will be selected.
+    avoid: 50
+    allow: 0
+
   evolution_blocklist:
     # No Pokemon will evolve into these Pokemon. Does nothing if evolution is not randomized.
     # You can use "_Legendaries" as a shortcut for all legendary Pokemon.
-    # Beware that this blocklist will not be ignored even if it would cause odd evolutions.
+    # Blocklists are best effort, other constraints may cause them to be ignored.
+    []
+
+  randomize_breeding:
+    # - Vanilla: Breeding is unchanged
+    # - Random Line Base: Each Pokemon will produce eggs for a random base Pokemon that evolves into it
+    # - Random Any Base: Each Pokemon will produce eggs for a random base Pokemon
+    # - Random Lower BST: Each Pokemon will produce eggs for a random Pokemon with equal or lower BST
+    # - Completely Random: Each Pokemon will produce eggs for a random Pokemon
+    vanilla: 50
+    line_base: 0
+    any_base: 0
+    decrease_bst: 0
+    completely_random: 0
+
+  breeding_blocklist:
+    # No Pokemon will produce eggs containing these Pokemon.
+    # You can use "_Legendaries" as a shortcut for all legendary Pokemon.
+    # Blocklists are best effort, other constraints may cause them to be ignored.
     []
 
   randomize_trades:
@@ -579,9 +685,10 @@ Pokemon Crystal:
     # Remove 1%'s modifies grass/cave encounters to 30%/25%/20%/10%/5%/5%/5% and does not modify any others.
     # Balanced sets the following:
     #     Grass/Cave: 20%/20%/15%/15%/10%/10%/10%
+    #     Surf (unchanged): 60%/30%/10%
     #     Headbutt:  20%/20%/20%/15%/15%/10%
     #     Rock Smash: 70%/30%
-    #     Fishing (vanilla):
+    #     Fishing (unchanged):
     #         Old Rod: 70%/15%/15%
     #         Good Rod: 35%/35%/20%/10%
     #         Super Rod: 40%/30%/20%/10%
@@ -591,7 +698,9 @@ Pokemon Crystal:
     balanced: 0
     equal: 50
 
-  # Starters
+  ############
+  # Starters #
+  ############
   randomize_starters:
     # Randomizes species of starter Pokemon
     vanilla: 0
@@ -606,9 +715,9 @@ Pokemon Crystal:
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 195
     # Maximum value is 680
-    random: 50
+    random: 0
     random-low: 0
-    random-high: 0
+    random-high: 50
     normal_starters: 0 # equivalent to 310
 
   starter_blocklist:
@@ -618,7 +727,9 @@ Pokemon Crystal:
     # Blocklists are best effort, other constraints may cause them to be ignored
     []
 
-  # Moves
+  #########
+  # Moves #
+  #########
   randomize_learnsets:
     # Vanilla: Vanilla learnsets
     # Randomize: Random learnsets
@@ -655,21 +766,41 @@ Pokemon Crystal:
     'true': 0
 
   randomize_move_values:
-    # Restricted: Generates values based on vanilla move values
+    # - Restricted: Generates values based on vanilla move values
     # Multiplies the power of each move with a random number between 0.5 and 1.5
     # Adds or subtracts 0, 5 or 10 from original PP | Min 5, Max 40
     #
-    # Full Exclude Accuracy: Fully randomizes move Power and PP
+    # - Full Exclude Accuracy: Fully randomizes move Power and PP
     # Randomizes each move's Power [20-150], PP [5-40] linearly. All possible values have the same weight.
     # Multi-hit moves have their power divided by their average hit count.
     #
-    # Full: Previous + also randomizes accuracy.
+    # - Full: Previous + also randomizes accuracy.
     # Accuracy has a flat chance of 70% to be 100%, if not it is linearly distributed between 30-100.
     # Does not randomize accuracy of OHKO moves, status moves (e.g. Toxic) and unique damage moves (e.g. Seismic Toss)
     vanilla: 50
     restricted: 0
     full_exclude_accuracy: 0
     full: 0
+
+  randomize_type_chart:
+    # Randomizes the type matchup chart
+    # - Vanilla: Type matchups are unchanged
+    # - Shuffle: Shuffles type matchups around, keeping the same number of each possible matchup
+    # - Completely Random: Generates a random matchup for each type pair. WARNING: This can result in a lot of immunities
+    vanilla: 50
+    shuffle: 0
+    completely_random: 0
+
+  physical_special_split:
+    # Sets how moves are determined to be Physical or Special
+    # - Vanilla: Determined by move type, for example: all Fire moves are Special
+    # - Modern: Determined by the move, for example: Flame Wheel is Physical and Ember is Special
+    # - Random by type: Vanilla, but shuffled randomly for each type
+    # - Random by move: Modern, but shuffled randomly for each move
+    vanilla: 0
+    modern: 50
+    random_by_type: 0
+    random_by_move: 0
 
   hm_power_cap:
     # Lowers the power of damaging HM moves that exceed the set power down to match it.
@@ -719,7 +850,9 @@ Pokemon Crystal:
     # Does not apply to vanilla TMs
     []
 
-  # Trainers
+  ############
+  # Trainers #
+  ############
   randomize_trainer_parties:
     # Randomizes Pokemon in enemy trainer parties
     vanilla: 0
@@ -769,7 +902,9 @@ Pokemon Crystal:
     random-high: 0
     disabled: 50 # equivalent to 0
 
-  # Dexsanities
+  ###############
+  # Dexsanities #
+  ###############
   dexsanity:
     # Adds checks for catching Pokemon
     # Pokemon that cannot be logically obtained will never be included
@@ -826,15 +961,17 @@ Pokemon Crystal:
 
   dexsanity_starters:
     # Controls how Dexsanity treats starter Pokemon
-    # Allow: Starter Pokemon will be allowed as Dexsanity checks
-    # Block: Starter Pokemon will not be allowed as Dexsanity Checks
-    # Available Early: Starter Pokemon will all be obtainable in the wild immediately, unless there is nowhere to obtain
+    # - Allow: Starter Pokemon will be allowed as Dexsanity checks
+    # - Block: Starter Pokemon will not be allowed as Dexsanity Checks
+    # - Available Early: Starter Pokemon will all be obtainable in the wild immediately, unless there is nowhere to obtain
     # wild Pokemon immediately
     allow: 50
     block: 0
     available_early: 0
 
-  # Trainersanity
+  #################
+  # Trainersanity #
+  #################
   johto_trainersanity:
     # Adds checks for defeating Johto trainers.
     #
@@ -844,12 +981,12 @@ Pokemon Crystal:
     #
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 0
-    # Maximum value is 223
+    # Maximum value is 242
     random: 0
     random-low: 0
     random-high: 0
     none: 50 # equivalent to 0
-    full: 0 # equivalent to 223
+    full: 0 # equivalent to 242
 
   kanto_trainersanity:
     # Adds checks for defeating Kanto trainers.
@@ -860,12 +997,12 @@ Pokemon Crystal:
     #
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 0
-    # Maximum value is 119
+    # Maximum value is 130
     random: 0
     random-low: 0
     random-high: 0
     none: 50 # equivalent to 0
-    full: 0 # equivalent to 119
+    full: 0 # equivalent to 130
 
   trainersanity_alerts:
     # Shows a message box or plays a sound for Trainersanity checks
@@ -874,9 +1011,14 @@ Pokemon Crystal:
     message_box: 0
     sound_only: 50
 
-  # Pokemon Logic
+  #################
+  # Pokemon Logic #
+  #################
   wild_encounter_methods_required:
     # Sets which wild encounter types may be logically required
+    #
+    # "_Random" has a 50% chance to include types which are not already included
+    # "_All" will include all types
     #
     # Swarms and roamers are NEVER in logic
     ['Land', 'Surfing', 'Fishing', 'Headbutt', 'Rock Smash']
@@ -896,6 +1038,9 @@ Pokemon Crystal:
 
   evolution_methods_required:
     # Sets which types of evolutions may be logically required
+    #
+    # "_Random" has a 50% chance to include types which are not already included
+    # "_All" will include all types
     ['Level', 'Level Tyrogue', 'Use Item', 'Happiness']
 
   evolution_gym_levels:
@@ -919,7 +1064,9 @@ Pokemon Crystal:
     with_ditto: 50
     any: 0
 
-  # Traps
+  #########
+  # Traps #
+  #########
   phone_trap_weight:
     # Adds random Pokegear calls that acts as traps
     # Weight is the percentage chance each filler item is replaced with a trap
@@ -992,13 +1139,16 @@ Pokemon Crystal:
     random-low: 0
     random-high: 0
 
-  # Quality of Life
+  ###################
+  # Quality of Life #
+  ###################
   game_options:
     # Presets in-game options. These can be changed in-game later. Any omitted options will use their default.
     #
     # Allowed options and values, with default first:
     #
     # ap_item_sound: on/off - Sets whether a sound is played when a remote item is received
+    # auto_hms: off/on - HMs will be used automatically where possible, if their usage conditions are met
     # auto_run: off/on - Sets whether run activates automatically, if on you can hold B to walk
     # battle_animations: all/no_scene/no_bars/speedy - Sets which battle animations are played:
     #     all: All animations play, including entry and moves
@@ -1019,8 +1169,10 @@ Pokemon Crystal:
     # fast_egg_hatch: off/on - Sets whether eggs take a single cycle to hatch
     # fast_egg_make: off/on - Sets whether eggs are guaranteed after one cycle at the day care
     # guaranteed_catch: off/on - Sets whether balls have a 100% success rate
+    # hms_require_teaching: on/off - Sets whether it is required to teach field moves to use them in the field
     # low_hp_beep: on/off - Sets whether the low HP beep is played in battle
     # menu_account: on/off - Sets whether your start menu selection is remembered
+    # more_uncaught_encounters: on/off - Sets whether wild encounters of Pokemon you have not caught are more likely
     # poison_flicker: on/off - Sets whether the overworld poison flash effect is played
     # rods_always_work: off/on - Sets whether the fishing rods always succeed
     # short_fanfares: off/on - Sets whether item receive fanfares are shortened
@@ -1035,6 +1187,7 @@ Pokemon Crystal:
     # trainersanity_indication - Sets whether Trainersanity trainers have grayscale sprites until they are beaten
     # turbo_button: none/a/b/a_or_b - Sets which buttons auto advance text when held
     ap_item_sound: 'on'
+    auto_hms: 'on'
     auto_run: 'off'
     battle_animations: speedy
     battle_move_stats: 'on'
@@ -1047,8 +1200,10 @@ Pokemon Crystal:
     fast_egg_hatch: 'on'
     fast_egg_make: 'on'
     guaranteed_catch: 'on'
+    hms_require_teaching: 'off'
     low_hp_beep: 'off'
     menu_account: 'off'
+    more_uncaught_encounters: 'on'
     poison_flicker: 'off'
     rods_always_work: 'on'
     short_fanfares: 'on'
@@ -1073,6 +1228,20 @@ Pokemon Crystal:
     spheres: 0
     spheres_and_distance: 50
 
+  lock_kanto_gyms:
+    # Logically lock entering all Kanto Gyms and Mt. Moon behind access to a high level Pokemon, included locations:
+    # - Snorlax
+    # - Ho-oh
+    # - Lugia
+    # - Suicune
+    # - Silver Cave entrance
+    #
+    # You can still enter gyms without access to any of these.
+    #
+    # NOTE: It's not recommended to use this option with Level Scaling, as the Gym and wild Pokemon levels will be scaled
+    'off': 50
+    high_level_pokemon: 0
+
   all_pokemon_seen:
     # Start with all Pokemon seen in your Pokedex.
     # This allows you to see where the Pokemon can be encountered in the wild.
@@ -1094,6 +1263,18 @@ Pokemon Crystal:
     # Improves the selection of items at Pokemarts
     'false': 0
     'true': 50
+
+  build_a_mart:
+    # Create a custom shop in place of the better mart with your own item selection, this also affects the final upgraded
+    # Pokecenter 2F mart.
+    # The first two shop items will always be Poke Ball and Escape Rope.
+    # Maximum of 14 items, any extra items will be discarded.
+    #
+    # Available items: Antidote, Awakening, Burn Heal, Calcium, Carbos, Dire Hit, Elixer, Ether, Fresh Water,
+    # Full Heal, Full Restore, Great Ball, Guard Spec, HP Up, Hyper Potion, Ice Heal, Iron, Lemonade, Max Elixer,
+    # Max Ether, Max Potion, Max Repel, Max Revive, Parlyz Heal, Potion, Protein, PP Up, Rare Candy, Repel,
+    # Revive, Soda Pop, Super Potion, Super Repel, Ultra Ball, X Accuracy, X Attack, X Defend, X Special, X Speed.
+    []
 
   experience_modifier:
     # Scale the amount of Experience Points given in battle
@@ -1131,6 +1312,17 @@ Pokemon Crystal:
     random-low: 0
     random-high: 0
 
+  always_unlock_fly_destinations:
+    # Always unlock Fly destinations when entering a town, even if Randomize Fly Unlocks is enabled
+    'false': 50
+    'true': 0
+
+  trainer_name:
+    # Preset your trainer name, this skips the name prompt.
+    #
+    # Only the first seven characters will be used, unsupported characters will be replaced with '?'.
+    'Crystal': 50
+
   death_link:
     # When you die, everyone who enabled death link dies. Of course, the reverse is true too.
     #
@@ -1138,11 +1330,13 @@ Pokemon Crystal:
     'false': 50
     'true': 0
 
-  # Cosmetic
+  ############
+  # Cosmetic #
+  ############
   randomize_palettes:
-    # Vanilla: Vanilla Pokemon color palettes
-    # Match Types: Color palettes match Pokemon Type
-    # Completely Random: Color palettes are completely random
+    # - Vanilla: Vanilla Pokemon color palettes
+    # - Match Types: Color palettes match Pokemon Type
+    # - Completely Random: Color palettes are completely random
     vanilla: 50
     match_types: 0
     completely_random: 0
@@ -1155,13 +1349,17 @@ Pokemon Crystal:
     shuffle: 0
     completely_random: 0
 
-  # :3
+  ######
+  # :3 #
+  ######
   enable_mischief:
     # If I told you what this does, it would ruin the surprises :)
     'false': 50
     'true': 0
 
-  # Item & Location Options
+  ###########################
+  # Item & Location Options #
+  ###########################
   local_items:
     # Forces these items to be in their native world.
     []
@@ -1198,4 +1396,8 @@ Pokemon Crystal:
 
   item_links:
     # Share part of your item pool with other players.
+    []
+
+  plando_items:
+    # Generic items plando.
     []
