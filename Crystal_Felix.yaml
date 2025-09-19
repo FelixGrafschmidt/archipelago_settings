@@ -620,8 +620,8 @@ Pokemon Crystal:
     # your chosen setting here, it will evolve into the closest available thing to a valid evolution.
     #
     # Note: All Pokemon will be standardized to the medium-fast EXP curve when any evolution randomization is enabled.
-    vanilla: 0
-    match_a_type: 50
+    vanilla: 50
+    match_a_type: 0
     increase_bst: 0
 
   convergent_evolution:
