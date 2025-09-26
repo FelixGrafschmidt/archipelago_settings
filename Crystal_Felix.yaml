@@ -423,7 +423,7 @@ Pokemon Crystal:
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 0
     # Maximum value is 10000
-    100: 50
+    0: 50
     random: 0
     random-low: 0
     random-high: 0
@@ -1254,7 +1254,8 @@ Pokemon Crystal:
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 0
     # Maximum value is 999999
-    random: 50
+    0: 50
+    random: 0
     random-low: 0
     random-high: 0
     vanilla: 0 # equivalent to 3000
@@ -1274,7 +1275,7 @@ Pokemon Crystal:
     # Full Heal, Full Restore, Great Ball, Guard Spec, HP Up, Hyper Potion, Ice Heal, Iron, Lemonade, Max Elixer,
     # Max Ether, Max Potion, Max Repel, Max Revive, Parlyz Heal, Potion, Protein, PP Up, Rare Candy, Repel,
     # Revive, Soda Pop, Super Potion, Super Repel, Ultra Ball, X Accuracy, X Attack, X Defend, X Special, X Speed.
-    []
+    ["Full Restore", "Max Revive", "Rare Candy", "Protein", "Iron", "Calcium", "Carbos", "X Accuracy", "X Attack", "X Defend", "X Special", "X Speed"]
 
   experience_modifier:
     # Scale the amount of Experience Points given in battle
