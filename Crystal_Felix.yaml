@@ -365,8 +365,8 @@ Pokemon Crystal:
     # Instead of placing your own items directly into the ROM, all items are received from the server, including items you find for yourself.
     # This enables co-op of a single slot and recovering more items after a lost save file (if you're so unlucky).
     # But it changes pickup behavior slightly and requires connection to the server to receive any items.
-    'false': 50
-    'true': 0
+    'false': 0
+    'true': 50
 
   item_pool_fill:
     # Changes how non-progression items are put into the pool.
